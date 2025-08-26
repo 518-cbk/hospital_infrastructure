@@ -1,0 +1,736 @@
+WardName,ZoneNo.,FacilityName,Type(Hospital/NursingHome/Lab),Class:(Public/Private),PharmacyAvailable:Yes/No,NumberofBedsinfacilitytype,NumberofDoctors/Physicians,NumberofNurses,NumberofMidwivesProfessional,AverageMonthlyPatientFootfall,AmbulanceServiceAvailable,CountofAmbulance,WardNo.,FacilityNo.,Cluster,Cluster_Name
+Ambil Odha,5,"Late Matoshri Ramabai Ambedkar Maternity Home, AmbilOdha",16,0,1,10,2,4,1,4500,1,1,1,316,2,Specialized Services
+Aundh,2,"Aundh Kuti Maternity Home, Aundh",16,0,1,14,2,5,2,2500,1,1,3,48,2,Specialized Services
+Bopodi,2,"Late Draupadabai Murlidhar Khedekar Maternity Home, Bopodi",16,0,1,16,2,4,9,1900,1,1,12,307,2,Specialized Services
+Shivaji Nagar Station,2,"Dr. Dalvi, PMC Joint Project",16,0,1,30,4,7,9,2400,1,2,66,138,2,Specialized Services
+Hadapsar,4,"Late Anna Saheb Magar Maternity Home, Hadapsar",16,0,1,20,2,3,6,4500,1,1,27,297,2,Specialized Services
+Health Camp,2,"Dr. Homi J. Bhabha Maternity Home, Health Camp",16,0,1,16,2,6,6,4000,1,2,28,145,2,Specialized Services
+"Gujrath Colony, Kothrud",2,"Late Jayabai Sutar Maternity Home, Kothrud",16,0,1,10,4,7,6,5000,1,4,24,309,2,Specialized Services
+Mundhwa,4,"Late Sakharam Kundalik Kodre Maternity Home, Mundhwa",16,0,1,8,2,6,5,3500,1,1,50,326,2,Specialized Services
+Pashan Gaon,2,"Late Sahadev Eknath Nimhan Maternity Home, Pashan",16,0,1,16,2,3,5,1800,1,1,55,325,2,Specialized Services
+Bhawani Peth,5,Late Chandu Mama Sonawane Maternity Home,16,0,1,86,5,12,9,5500,1,2,9,303,2,Specialized Services
+Wanowrie,4,"Late Namedevrao Shivarkar Maternity Home, Wanorie",16,0,1,10,1,4,4,1900,1,1,77,321,2,Specialized Services
+Yerawada,1,"Bharatratna Rajiv Gandhi Hospital, Yerawada",16,0,1,180,4,18,10,8000,1,2,79,63,2,Specialized Services
+Guruwar Peth,5,"Late Savitribai Phule Maternity Home, Guruwarpeth",16,0,1,10,2,2,4,3500,1,1,25,327,2,Specialized Services
+Kondhwa,4,"Late Minatai Thakare Maternity Home, Kondhwa",16,0,1,10,2,6,0,2600,1,1,40,318,2,Specialized Services
+"Gadikhana, Shukruwar Peth",5,"Late Malti Kachi Maternity Home, Gadikhana",16,0,1,20,2,1,5,2500,1,2,19,314,2,Specialized Services
+Mitramandal,5,Rajmata Jijau Mitra Mandal (only IPD),16,0,1,20,2,3,3,50,1,1,48,466,2,Specialized Services
+Balaji Nagar,4,"Late Kashinath Aa. Dhankavde, Balajinagar",16,0,1,20,2,2,3,1200,1,1,7,312,2,Specialized Services
+"Maharashtra Housing Board, Yerawada",1,"Chatrpati Shivray Disp, Yerwada, Nagpur Chawl",16,0,1,10,1,2,4,2000,0,0,44,94,0,Resource-Rich Facilities
+Somwar Peth,5,Kamla Nehru Hospital,14,0,1,450,10,64,23,18000,1,3,67,265,1,Basic Infrastructure
+Pune Station,1,Dr. Naidu Infectious Disease Hospital,15,0,1,200,4,7,13,4000,1,3,56,155,2,Specialized Services
+Erandwane,3,"Late. Tharkude Dispensary, Erandwane",6,0,1,0,1,0,1,1400,0,0,18,332,0,Resource-Rich Facilities
+Bhawani Peth,5,"Bai Bhikaji Pastonji Bammanji Dispensary, Bhawanipeth",6,0,1,0,1,0,1,1100,0,0,9,52,0,Resource-Rich Facilities
+Dattawadi,0,"Late Anandibai Narhar Gadgil Dispensary, Dattawadi",6,0,1,0,1,0,1,2100,0,0,14,296,0,Resource-Rich Facilities
+Ganjpeth,5,"Late Balaji Rakhmaji Gaikwad Dispensary, Ganjpeth",6,0,1,0,1,0,1,2500,0,0,22,299,0,Resource-Rich Facilities
+Hingne,3,"Late Vijayabai Shirke Health Centre, Hingne",6,0,1,0,1,0,1,1100,0,0,29,330,0,Resource-Rich Facilities
+Mitramandal,5,"Hindu Samrat SS Pramukh Balasaheb Thakare Disp, Parvati Darshan / old Lions Club Dispensary, Mitra Mandal",6,0,1,0,1,0,1,5000,0,0,48,226,0,Resource-Rich Facilities
+Mangalwar Peth,5,"Late Dada Saheb Gaikwad Dispensary, Mangalwarpeth, Barne Road",6,0,1,0,1,0,1,1200,0,0,46,304,0,Resource-Rich Facilities
+Narayan Peth,0,"Late Kalawati Mawale Dispensary, Narayanpeth",6,0,1,0,1,0,1,2200,0,0,53,310,0,Resource-Rich Facilities
+Nana Peth,0,"Late Mama Saheb Badade Dispensary, Nanapeth",6,0,1,0,1,0,1,1300,0,0,52,315,0,Resource-Rich Facilities
+Ravivar Peth,0,"Hutatama Babu Genu Dispensary, Raviwarpeth",6,0,1,0,1,0,1,1200,0,0,59,230,0,Resource-Rich Facilities
+Vishrantwadi,0,"Siddharth Dispensary, Vishrantwadi",6,0,1,0,1,0,2,2900,0,0,72,552,0,Resource-Rich Facilities
+Sahakar Nagar,0,"Late Shivshankar Pote Dispensary, Sahakarnagar",6,0,1,0,2,2,1,10000,0,1,63,328,2,Specialized Services
+Shaniwar Peth,0,"Late Mukundrao Lele Dispensary, Shaniwarpeth",6,0,1,0,1,0,2,1800,0,0,65,319,0,Resource-Rich Facilities
+"PMC Bhavan, Shivaji Nagar",0,"Late Jangalrao Kondiba Amrale Dispensary, Shivaji Nagar",6,0,1,0,1,0,1,2800,0,0,54,308,0,Resource-Rich Facilities
+Aundh Road,0,"Late Baburao Genba Shewale Hospital, Chikhalwadi",6,0,1,0,1,0,1,2200,0,0,4,298,0,Resource-Rich Facilities
+Ganesh Peth,0,"Late Rohidas Kirad Dispensary, Ganeshpeth",6,0,1,0,1,0,1,1100,0,0,21,324,0,Resource-Rich Facilities
+Kalyani Nagar,0,"Late Damodarraoji Galande Patil Dispensary, Kalyani Nagar",6,0,1,0,1,0,2,2100,0,1,35,305,0,Resource-Rich Facilities
+Lohagaon,0,"Christ Rock Edward Paul Dispensary, Lohagaon",6,0,1,0,1,0,1,1100,0,0,43,101,0,Resource-Rich Facilities
+"Maharshi Nagar, Gultekdi",0,"Ga.Bha. Indumati Manilal Khanna Dispensary, Maharshi Nagar",6,0,1,0,1,0,1,2400,0,0,45,198,0,Resource-Rich Facilities
+Bhim nagar,0,"Rajashree Shahu Maharaj Dispensary, Bhim Nagar - Shirke Wasti",6,0,1,0,1,0,1,1100,0,0,10,465,0,Resource-Rich Facilities
+Kelewadi,0,"Late Sundarabai Ganpat Raut Dispensary, Kelewadi",6,0,1,0,1,1,1,900,0,0,38,329,0,Resource-Rich Facilities
+Gandhi Nagar,0,"Late Lokshahir Annabhau Sathe Dispensary, Gandhi Nagar",6,0,1,0,1,0,2,1300,0,0,20,313,0,Resource-Rich Facilities
+"Gadikhana, Shukruwar Peth",0,"Dr. Kotnis Health Centre, Gadikhana",6,0,1,0,4,1,1,2500,0,0,19,153,0,Resource-Rich Facilities
+Koregaon Park,0,"Late Bapu Saheb Genuji Kawade Patil Dispensary,  Kawade Wasti, Koregaon Park",6,0,1,0,1,0,1,1400,0,0,41,300,0,Resource-Rich Facilities
+Kalas,0,"Kalas Dispensary, Jadhav Wasti - Kalas",6,0,1,0,1,0,3,3000,0,1,34,252,2,Specialized Services
+Dias Plot,0,"Bharatratna Dr. Babasaheb Ambedkar Dispensary, Dias Plot",6,0,1,0,1,0,1,1800,0,0,17,62,0,Resource-Rich Facilities
+Mohammad Wadi,0,"Late Dashrath Baliram Bhangire Disp., Mohammad Wadi",6,0,1,0,1,0,1,1400,0,0,49,306,0,Resource-Rich Facilities
+"Kedari Nagar, Wanowrie",0,"Chatrapati Shahu Maharaj Disp., Kedari Nagar, Wanawadi",6,0,1,0,1,0,1,700,0,1,37,93,0,Resource-Rich Facilities
+Atul Nagar,0,"Late Bartakke Disp., Atul Nagar",6,0,1,0,1,0,1,3000,0,1,2,301,0,Resource-Rich Facilities
+Janta vasahat,0,"Janta Vasahat Dispensary, Janta Vasahat",6,0,1,0,1,0,1,800,0,0,30,239,0,Resource-Rich Facilities
+Upper Bibwewadi,0,"Yug Purush Raja Shiv Chatrapati, Bibwewadi (Upper) Disp.",6,0,1,0,1,0,1,2500,0,0,69,627,0,Resource-Rich Facilities
+"Gosavi Wasti, Kothrud",0,Late Bindu Madhav Thakare Disp. Gosavi Wasti,6,0,1,0,1,0,1,900,0,0,23,302,0,Resource-Rich Facilities
+Vadgaon,0,"PMC Vadagaon Disp., Dhayari",6,0,1,0,1,0,1,2200,0,0,71,426,0,Resource-Rich Facilities
+Dhankawadi,0,Late Vilasrao Tambe Disp Dhankawadi,6,0,1,0,2,1,1,6800,0,0,15,331,0,Resource-Rich Facilities
+"Ramnagar, Warje",0,"Late Pruthak Barate Disp, Ramnagar ",6,0,1,0,1,0,2,2100,0,0,57,323,0,Resource-Rich Facilities
+Somwar Peth,0,"Late Kalawatibai Todkar Disp., Somaver Peth",6,0,1,0,1,0,1,1100,0,0,67,311,0,Resource-Rich Facilities
+Sukh Sagar Nagar,0,"Ward No.76, Katraj Davakhana",6,0,1,0,1,0,1,2800,0,0,68,618,0,Resource-Rich Facilities
+Bibwewadi,0,"Shri. Sadguru Shankar Maharaj Disp., Bibwewadi",6,0,1,0,1,0,2,2100,0,0,11,548,0,Resource-Rich Facilities
+Guruwar Peth,0,"Swatantrya Senani Gotiram Bhaiyya Kachi, Guruvar Peth Poly Clinic",6,0,1,0,1,0,1,90,0,0,25,583,0,Resource-Rich Facilities
+Dhayari,0,"Late Murlidhar Pandurang Laygude Disp., Dhayari",6,0,1,0,1,0,1,600,0,0,16,320,0,Resource-Rich Facilities
+Yerawada,0,Swargiya Se Gangaram Karne Disp Shastrinagar Yerwada,6,0,1,0,1,0,1,700,0,0,79,582,0,Resource-Rich Facilities
+Kondhwa,0,"PMC Dispensary, No. 62 Kondhwa Bk.",6,0,1,0,1,0,1,1800,0,0,40,424,0,Resource-Rich Facilities
+Upper Indira Nagar,0,Late Premchand Oswal Disp. Upper Indirnagar,6,0,1,0,1,0,1,1200,0,0,70,322,0,Resource-Rich Facilities
+Sai nagar,0,"PMC Dispensary Sainagar, Kondhwa",6,0,1,0,1,0,1,300,0,0,64,422,0,Resource-Rich Facilities
+Wadgaonsheri,0,"Late Meena Tai Thakare Polyclinic, Wadgaon Sheri Disp. ",6,0,1,0,1,0,1,3600,0,1,76,317,0,Resource-Rich Facilities
+Kharadi,0,"PMC Dispensary, Kharadi",6,0,1,0,1,0,2,1500,0,0,39,423,0,Resource-Rich Facilities
+Mitha Nagar,0,"Hazrat Khwaja Moinuddin Khisti Rahe, Khwaja Garib Nawaz Disp., Mithanagar",6,0,1,0,1,0,1,3900,0,0,47,221,0,Resource-Rich Facilities
+"Laxmi Nagar, Kothrud",0,"E - Health Centre, Laxmi Nagar, Kothrud",6,0,1,0,1,0,1,0,0,0,42,186,0,Resource-Rich Facilities
+Ramtekdi,4,"E - Health Centre, Ramtekdi, Hadapsar",6,0,1,0,1,0,1,0,0,0,58,187,0,Resource-Rich Facilities
+Baner,2,"Smart Clinic, Baner",6,0,1,0,1,0,1,0,0,0,8,560,0,Resource-Rich Facilities
+Narayan Peth,0,"Immunization Centre, Narayan Peth",4,0,1,0,1,0,3,2200,0,0,53,231,0,Resource-Rich Facilities
+Katraj,4,"PMC Firta Dispensary, Ward No.40 Katraj, Vasant More Firta Dispensary",5,0,1,0,1,0,1,1200,1,1,36,425,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Mahrashtra Medical Foundation Joshi Hosptial,42,1,1,98,0,0,0,0,1,0,61,354,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Sathe Hospital,21,1,0,17,0,0,0,0,0,0,61,509,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Dr. Tarabai Limye Hospital,23,1,0,7,0,0,0,0,0,0,31,172,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Dr. Paranjpe Gynac Hospital,23,1,0,6,0,0,0,0,0,0,31,159,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Nanal Hospital,21,1,0,10,0,0,0,0,0,0,75,389,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Dr. Deshmukh Hospital,21,1,0,8,0,0,0,0,0,0,31,140,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Hrishikesh Healthcare pvt. Ltd.,9,1,1,30,0,0,0,0,0,0,61,229,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Colony Nursing Home,23,1,0,100,0,0,0,0,0,0,31,104,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Dr. Purandare Maternity Home,23,1,0,2,0,0,0,0,0,0,31,163,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Lokmanya Hospital,21,1,0,9,0,0,0,0,0,0,75,340,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,"Dr. Karve""s Hospital",40,1,0,7,0,0,0,0,0,0,61,147,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Yashshree Maternity & Nursing Home,21,1,0,15,0,0,0,0,0,0,60,624,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Sushrut  Hospital ,39,1,1,120,0,0,0,0,1,0,61,573,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Harjeevan Hospital,21,1,1,19,0,0,0,0,1,0,31,219,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Manoj Clinic,9,1,0,9,0,0,0,0,0,0,31,358,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Sanjeevan Surgery/ Atharva Netralaya & Reserch Centre ,9,1,0,10,0,0,0,0,0,0,61,499,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Nerlikars Hospital,9,1,0,5,0,0,0,0,0,0,62,397,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Katariya Hospital,21,1,0,20,0,0,0,0,0,0,78,268,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Dr. Todkar Hospital,21,1,0,29,0,0,0,0,0,0,13,176,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Marathe Hospital,39,1,0,9,0,0,0,0,0,0,60,362,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Dr. Purohit Maternity Hospital,21,1,0,18,0,0,0,0,0,0,60,164,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Dwidal Nursing Home,21,1,0,18,0,0,0,0,0,0,75,184,0,Resource-Rich Facilities
+BIBEWADI,5,Gultekdi Nursing Home & Maternity Home,21,1,0,12,0,0,0,0,0,0,6,215,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Sushrusha Hospital,21,1,0,5,0,0,0,0,0,0,60,572,0,Resource-Rich Facilities
+BIBEWADI,5,Poona Advantist Hospital,21,1,0,90,0,0,0,0,0,0,6,447,0,Resource-Rich Facilities
+BHAVANI PETH,5,Aliance Munot Hospital,21,1,0,33,0,0,0,0,0,0,5,21,0,Resource-Rich Facilities
+BHAVANI PETH,5,Sharada Clinic,39,1,0,25,0,0,0,0,0,0,5,521,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Anand Nursing Home,21,1,0,5,0,0,0,0,0,0,31,28,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Sharada Clinic           Shaishav Clinic,40,1,0,100,0,0,0,0,0,0,31,522,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,ENT Hospital,7,1,0,3,0,0,0,0,0,0,60,190,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Surgical Nursing Home,9,1,0,9,0,0,0,0,0,0,31,568,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Sutika Seva Mandir,23,1,0,16,0,0,0,0,0,0,31,575,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Naik Orthopadic Hospital,39,1,0,40,0,0,0,0,0,0,31,386,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Ratnadeep  Hospital,9,1,0,3,0,0,0,0,0,0,26,472,0,Resource-Rich Facilities
+BHAVANI PETH,5,Kering Hospital,39,1,0,17,0,0,0,0,0,0,5,273,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Mahatma Gandhi Hospital,9,1,0,16,0,0,0,0,0,0,31,350,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Dr.Patankar Medical Foundetion & Patankar Hospital Pvt. Ltd.,21,1,1,40,0,0,0,0,0,0,31,182,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Deshmukh Hospital,21,1,0,8,0,0,0,0,0,0,61,116,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Jijamata Hospital,21,1,0,3,0,0,0,0,0,0,31,245,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Mulanche Navjeevan Hospital,40,1,0,13,0,0,0,0,0,0,61,381,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Shreeyash Hospital,9,1,0,9,0,0,0,0,0,0,61,536,0,Resource-Rich Facilities
+BIBEWADI,5,Yashraj Nursing Home,9,1,0,5,0,0,0,0,0,0,6,623,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Wagdarikar Hospital,21,1,0,5,0,0,0,0,0,0,31,614,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Vartak Health Services pvt. Ltd.,21,1,0,20,0,0,0,0,0,0,75,601,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Madhavrao Rande Memorial Hospital (Sanjivan Hospital),42,1,1,50,0,0,0,0,1,0,75,346,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Anand Maternity & Nursing Home,21,1,0,4,0,0,0,0,0,0,31,26,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Gokhale Hospital,39,1,0,11,0,0,0,0,0,0,31,210,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Suyash Hospityal,21,1,0,8,0,0,0,0,0,0,33,578,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Pooja Nursing Home,9,1,0,10,0,0,0,0,0,0,60,446,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Dr. Ranade Hospital ,23,1,0,5,0,0,0,0,0,0,31,166,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Asha Nursing Home,9,1,0,4,0,0,0,0,0,0,60,38,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Lathi Hospital & Surgical Nursing Home,21,1,0,5,0,0,0,0,0,0,31,333,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Kalekar Hospital,21,1,0,5,0,0,0,0,0,0,13,254,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Godbole Hospital ,9,1,0,10,0,0,0,0,0,0,31,209,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Matruseva Hospital Maternity & Surgical Nursing Home,21,1,0,5,0,0,0,0,0,0,13,366,0,Resource-Rich Facilities
+WANADI-RAMTEKDI,4,Shanta Clinic,21,1,0,4,0,0,0,0,0,0,74,518,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Nachiket Hospital,9,1,0,14,0,0,0,0,0,0,75,385,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Surya Hospital pvt.ltd. Surya sahaydri hospital,42,1,1,71,0,0,0,0,1,0,31,569,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Kelkar Pediatric Hospital     ( Children ),40,1,0,5,0,0,0,0,0,0,31,272,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Dhodu Mama Sathe Hospital Vaidykiya Mahavidyalaya,42,1,1,100,0,0,0,0,1,0,75,129,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Sancheti Institute for Orthopedic & Rehabilitaion,39,1,1,100,0,0,0,0,1,0,61,495,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Bapat Hospital,21,1,0,5,0,0,0,0,0,0,61,56,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Shintre Hospital,23,1,0,7,0,0,0,0,0,0,31,528,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Nursing Home,21,1,0,9,0,0,0,0,0,0,31,411,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Dhanwantari Hospital,19,1,0,10,0,0,0,0,0,0,33,125,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Vinayak Hospital Maternity Nursing Home & Vinayak Homopatic Clinic,21,1,0,5,0,0,0,0,0,0,78,609,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Amey Nursing Home,21,1,0,5,0,0,0,0,0,0,31,22,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Poona Hospital & Reasarch Center,42,1,1,300,0,0,0,0,1,0,31,449,3,Development Needs
+SHIVAJINAGAR- GHOLE ROAD,2,Deodhar Eyes Hospital,28,1,0,2,0,0,0,0,0,0,61,114,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Devyani Hospital Surguri Maternity & General Nursing Home,42,1,0,14,0,0,0,0,0,0,33,120,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Niramay Nursing Home,9,1,0,4,0,0,0,0,0,0,75,402,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Dr. Khurd Maternity Home,23,1,0,4,0,0,0,0,0,0,31,151,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Sanjeevani Nursing Home,21,1,0,4,0,0,0,0,0,0,26,501,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Mamata Maternity Nursing Home,21,1,0,7,0,0,0,0,0,0,78,355,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Maher CLINIC,19,1,0,4,0,0,0,0,0,0,33,351,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Jehangir Hospital,42,1,1,335,0,0,0,0,1,0,13,243,3,Development Needs
+KOTHRUD-BAVDHAN,2,Phadnis Hospital Maternity & General Nursing Home,23,1,0,4,0,0,0,0,0,0,33,443,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Deendayal Memorial Hospital,42,1,1,48,0,0,0,0,1,0,61,112,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Sahwas Hospital Nursing Home,9,1,0,3,0,0,0,0,0,0,75,485,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Komal  Nursing Home & Shetiya Hospital,21,1,0,20,0,0,0,0,0,0,78,280,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Asha Kiran Hospital,21,1,0,16,0,0,0,0,0,0,31,37,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,5,Kothari Hospital,39,1,0,10,0,0,0,0,0,0,60,283,0,Resource-Rich Facilities
+BHAVANI PETH,5,Bora Nursing Home,21,1,0,8,0,0,0,0,0,0,5,76,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Suraj Hospital,9,1,0,2,0,0,0,0,0,0,61,567,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Suman Polyclinic & Nursing Home Pediatric & Medical,21,1,0,10,0,0,0,0,0,0,61,564,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Tupe Hospital,9,1,0,4,0,0,0,0,0,0,26,591,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Sadhu Vaswani Mission Medical Complex  (inlax & Budhrani Hospital),42,1,1,369,0,0,0,0,1,0,13,483,3,Development Needs
+DHOLE-PATIL ROAD,1,N.M.Wadiya Institute of Cardiology Charitable Trust,3,1,1,57,0,0,0,0,1,0,13,384,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Sardesai Hospital & ENT Hospital,7,1,0,2,0,0,0,0,0,0,61,505,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Dr. Vaidya Hospital Surgical & General Nursing Home,9,1,0,8,0,0,0,0,0,0,26,177,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Dabake Maternity & General Nursing Home,19,1,0,9,0,0,0,0,0,0,61,106,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Krishna Hospital,42,1,1,40,0,0,0,0,1,0,61,284,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Nursing Home,9,1,0,8,0,0,0,0,0,0,61,411,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Ghaisas ENT Hospital,7,1,0,3,0,0,0,0,0,0,61,206,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Sarswati Vilas Hospital,28,1,0,8,0,0,0,0,0,0,31,507,0,Resource-Rich Facilities
+BIBEWADI,5,Rukhmini Hospital,21,1,0,2,0,0,0,0,0,0,6,478,0,Resource-Rich Facilities
+BIBEWADI,5,Dr. Khanade Hospital,23,1,0,6,0,0,0,0,0,0,6,150,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Swanand Maternity Hospital & Laboretary,21,1,0,9,0,0,0,0,0,0,61,581,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Childrens Hospital,40,1,0,5,0,0,0,0,0,0,75,97,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Om Hospital,9,1,0,15,0,0,0,0,0,0,61,414,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Mahajan Nursing Home,18,1,0,5,0,0,0,0,0,0,60,348,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Sant Clinic Gaynic & Maternity Home. (Strirog & prasuti Shashtra Hospital),21,1,0,7,0,0,0,0,0,0,61,504,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Rode Hospital,21,1,0,7,0,0,0,0,0,0,33,476,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Potdar Maternity Home Obstetric & Gayncology & Pediyatric Speacility,21,1,0,5,0,0,0,0,0,0,62,452,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Zanwar Eye Hospital,28,1,0,6,0,0,0,0,0,0,60,628,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Chinmay Nursing Home,21,1,0,5,0,0,0,0,0,0,60,98,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Shreyas Maternity Home,21,1,0,5,0,0,0,0,0,0,75,537,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Marathe Nursing Home,21,1,0,5,0,0,0,0,0,0,33,363,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Gupte hospital of acurate daigonestic pvt.ltd.,23,1,0,15,0,0,0,0,0,0,61,216,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Sadhana Hospital & General Hospital,21,1,0,5,0,0,0,0,0,0,26,482,0,Resource-Rich Facilities
+BIBEWADI,5,Kamal Nursing Home,21,1,0,19,0,0,0,0,0,0,6,259,0,Resource-Rich Facilities
+BIBEWADI,5,Joshi Hospital Maternity & Gaynic Hospital,21,1,0,4,0,0,0,0,0,0,6,248,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Akshay Nursing Home,21,1,0,7,0,0,0,0,0,0,31,19,0,Resource-Rich Facilities
+WANADI-RAMTEKDI,4,Chaitanya Nursing Home,9,1,0,5,0,0,0,0,0,0,74,88,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Maharashtra Medical Foundetion Ratna Memorial Hospital,42,1,1,102,0,0,0,0,1,0,61,349,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Kamal Netra Rugnalya,28,1,0,5,0,0,0,0,0,0,33,258,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Deodhar Nursing Home,9,1,0,9,0,0,0,0,0,0,26,115,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Deodhar Nursing Home,21,1,0,20,0,0,0,0,0,0,26,115,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Sushrut Narsing Home,21,1,0,11,0,0,0,0,0,0,33,574,0,Resource-Rich Facilities
+BIBEWADI,5,Anand Hospital,9,1,0,3,0,0,0,0,0,0,6,25,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Bhide Hospital Balrog Vibhag,40,1,0,15,0,0,0,0,0,0,31,67,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Krushna Hospital & Nursing Home,21,1,0,5,0,0,0,0,0,0,51,286,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Agarwal Nursing Home & General Hospital,9,1,0,6,0,0,0,0,0,0,75,13,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Ashwini Nursing Home,21,1,0,5,0,0,0,0,0,0,75,44,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Manu Eye Hospital,28,1,0,1,0,0,0,0,0,0,26,361,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Shri. P.P.Loknath TirthSwami Maharaj Smarak Shri. Tuljabhavani Aarogya Dham,9,1,0,1,0,0,0,0,0,0,75,547,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Shraddha Hospital ,9,1,0,8,0,0,0,0,0,0,60,529,0,Resource-Rich Facilities
+AUNDH-BANER,2,Kotbagi  Hospital Pvt. Ltd.,21,1,0,15,0,0,0,0,0,0,0,282,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Dr. Gaikwad Hospital,21,1,0,2,0,0,0,0,0,0,26,142,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Kushte Nursing Home Maternity & General Surgical Nursing Home,21,1,0,3,0,0,0,0,0,0,61,293,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Shri Hospital Nursing,21,1,0,25,0,0,0,0,0,0,51,540,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Suman Sargical Home,9,1,0,4,0,0,0,0,0,0,60,565,0,Resource-Rich Facilities
+BIBEWADI,5,Kale Hospital,21,1,0,6,0,0,0,0,0,0,6,253,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Dhanwantari Hospital,9,1,0,12,0,0,0,0,0,0,26,125,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Shaikh  Hospital,23,1,0,15,0,0,0,0,0,0,13,516,0,Resource-Rich Facilities
+BIBEWADI,5,Dr. Purohit Nursing Home,21,1,0,15,0,0,0,0,0,0,6,165,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Dr. Nenes Hospital,9,1,0,10,0,0,0,0,0,0,51,157,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Vastalya Nursing Home,21,1,0,5,0,0,0,0,0,0,62,603,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Deep  Eye Clinic ,28,1,0,2,0,0,0,0,0,0,61,113,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Yogesh Hospital,39,1,0,11,0,0,0,0,0,0,31,626,0,Resource-Rich Facilities
+AUNDH-BANER,2,Shreyash Maternity & Eye Hospital,21,1,0,5,0,0,0,0,0,0,0,538,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Omkar Nursing Home,23,1,0,4,0,0,0,0,0,0,75,416,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Walvekar Hospital,23,1,0,1,0,0,0,0,0,0,61,616,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Kelkar Hospital,28,1,0,16,0,0,0,0,0,0,61,270,0,Resource-Rich Facilities
+AUNDH-BANER,2,Latkar Hospital,9,1,0,6,0,0,0,0,0,0,0,334,0,Resource-Rich Facilities
+BIBEWADI,5,Siddharth Hospital,21,1,0,23,0,0,0,0,0,0,6,553,0,Resource-Rich Facilities
+BIBEWADI,5,Shri J. Hospital,21,1,0,5,0,0,0,0,0,0,6,541,0,Resource-Rich Facilities
+WANADI-RAMTEKDI,4,Orthopedic Nursing Home,39,1,0,14,0,0,0,0,0,0,74,417,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Dr. Wachasunder ENT Clinic,7,1,0,3,0,0,0,0,0,0,61,178,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,PETELS HOSPITAL,9,1,0,9,0,0,0,0,0,0,51,421,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Indira Nursing Home,21,1,0,5,0,0,0,0,0,0,33,234,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Dr. Sabane Prasuti & Shushrusha Gruh,23,1,0,1,0,0,0,0,0,0,33,168,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Anup Hospital,9,1,0,5,0,0,0,0,0,0,62,32,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Kelkar Nursing Home,28,1,0,4,0,0,0,0,0,0,61,271,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Nirmal  Memorial Hospital,9,1,0,9,0,0,0,0,0,0,26,404,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Umarji Hospital,21,1,0,5,0,0,0,0,0,0,31,592,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Bhave Nursing Hospital,9,1,0,8,0,0,0,0,0,0,60,66,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Mathura Hospital,21,1,0,6,0,0,0,0,0,0,78,364,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Date Hospital,21,1,0,6,0,0,0,0,0,0,60,108,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Phadke Hospital,21,1,0,30,0,0,0,0,0,0,61,442,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Remedy Hospital,9,1,0,25,0,0,0,0,0,0,26,473,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Purunanda Sargical Clinic,9,1,0,5,0,0,0,0,0,0,32,463,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Navjeevan Hospital,9,1,0,6,0,0,0,0,0,0,26,393,0,Resource-Rich Facilities
+BIBEWADI,5,Parasnis Hospital,23,1,0,24,0,0,0,0,0,0,6,432,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Aarogya Seva Medical Academy  of India Charitable Trust & ACE Hospital ( Multi Speciality Care ),33,1,0,35,0,0,0,0,0,0,75,5,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Gandhi Accident & General Hospital,10,1,0,5,0,0,0,0,0,0,31,201,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Gaikwad Hospital,11,1,0,11,0,0,0,0,0,0,26,200,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Shushrut Hospital,11,1,0,4,0,0,0,0,0,0,51,550,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Sakhi Clinic,11,1,0,6,0,0,0,0,0,0,61,490,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Sarpotdar Eye Hospital,11,1,0,6,0,0,0,0,0,0,33,506,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Akshay Hospital,11,1,0,8,0,0,0,0,0,0,75,18,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Kulkarni Endo Surgery  Institute & Reconstructive  Urology  Center,11,1,0,21,0,0,0,0,0,0,33,287,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Srujan Maternity & Nursing Home,21,1,0,5,0,0,0,0,0,0,75,563,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Joglekar Hospital,21,1,0,20,0,0,0,0,0,0,61,247,0,Resource-Rich Facilities
+BIBEWADI,5,Karne Hospital Pvt. Ltd. Orthopedic Nursing Home,39,1,0,23,0,0,0,0,0,0,6,266,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Dr. Pai Hospital,11,1,0,6,0,0,0,0,0,0,60,158,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Pramodini Urology Foundiation & Stree Clinic,21,1,0,15,0,0,0,0,0,0,61,458,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Siddhant Maternity Home,21,1,0,15,0,0,0,0,0,0,60,551,0,Resource-Rich Facilities
+BIBEWADI,5,Dr. Tekwade Eye Hospital,28,1,0,2,0,0,0,0,0,0,6,173,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Date Hospital,21,1,0,14,0,0,0,0,0,0,31,108,0,Resource-Rich Facilities
+BHAVANI PETH,5,Swyam Clinic & Nursing Home,21,1,0,15,0,0,0,0,0,0,5,584,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Kulkarni Hospital & Child Hospital & Prasutigruh,21,1,0,3,0,0,0,0,0,0,31,288,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Suryaprabha Nursing Home & ENT Hospital,21,1,0,11,0,0,0,0,0,0,33,571,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Chandak Hospital,11,1,0,4,0,0,0,0,0,0,31,89,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Dr. Patwardhan Hospital & Prasutigruha,21,1,0,5,0,0,0,0,0,0,60,162,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Dr. Talesara  Hospital,11,1,0,6,0,0,0,0,0,0,78,171,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Anand Medical Foundetion & Subuodh Hospital & Resarch Center,21,1,0,40,0,0,0,0,0,0,33,27,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Satyanand  Hospital ,21,1,0,36,0,0,0,0,0,0,32,511,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Aashtang Ayurved Rugnalaya,11,1,0,25,0,0,0,0,0,0,31,6,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Vaibhav General Hospital,11,1,0,13,0,0,0,0,0,0,78,598,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Dr. Telang Hospital,23,1,0,4,0,0,0,0,0,0,32,174,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Mother Home  Fartility Clinic,21,1,0,3,0,0,0,0,0,0,60,378,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Vivekanand Medical Foundetion Under Dr. Khenat Hospital,21,1,0,6,0,0,0,0,0,0,75,612,0,Resource-Rich Facilities
+BIBEWADI,5,Dr. Bhagli Clinic,39,1,0,4,0,0,0,0,0,0,6,135,0,Resource-Rich Facilities
+BIBEWADI,5,Dr. Bhagli Nursing Home,11,1,0,12,0,0,0,0,0,0,6,136,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Shatau Hospital,21,1,0,15,0,0,0,0,0,0,60,523,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Niramay Hospital,21,1,0,15,0,0,0,0,0,0,51,401,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Sneha ENT Hospital,7,1,0,2,0,0,0,0,0,0,75,561,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Sayali Nursing Home,23,1,0,5,0,0,0,0,0,0,75,512,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Kamla Devi Memorial Hospital,21,1,0,6,0,0,0,0,0,0,62,264,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Vimal Nursing Home,21,1,0,16,0,0,0,0,0,0,32,607,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Pawar Multispeciality Hospital & dignostic Centre Pvt.Ltd.,42,1,1,53,0,0,0,0,1,0,32,439,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Madhukar General Hospital,21,1,0,24,0,0,0,0,0,0,62,347,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Mulye Hospital,11,1,0,4,0,0,0,0,0,0,13,382,0,Resource-Rich Facilities
+BHAVANI PETH,5,Todkar Hospital,21,1,0,15,0,0,0,0,0,0,5,587,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Parvati Netra Chikitsalya,28,1,0,2,0,0,0,0,0,0,31,436,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Yashwant Hospital,21,1,0,7,0,0,0,0,0,0,60,625,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Suyash Hospital,21,1,0,6,0,0,0,0,0,0,33,577,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Kamat Clinic,9,1,0,3,0,0,0,0,0,0,33,262,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Jagtap Hospital,21,1,1,38,0,0,0,0,1,0,62,237,0,Resource-Rich Facilities
+BHAVANI PETH,5,Manohar Prasuti Gruha,21,1,0,10,0,0,0,0,0,0,5,357,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Modern ENT Hospital,7,1,0,3,0,0,0,0,0,0,13,372,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Gadkari Eye Center,28,1,0,2,0,0,0,0,0,0,61,199,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Dhadfale Nursing Home,11,1,0,3,0,0,0,0,0,0,61,122,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Dhruvis  Clinic,11,1,0,5,0,0,0,0,0,0,31,130,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Joshi Maternity Hospital,23,1,0,8,0,0,0,0,0,0,75,249,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Bhandari Maternity & Nursing Home,21,1,0,25,0,0,0,0,0,0,62,61,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Adate General Hospital,21,1,0,6,0,0,0,0,0,0,62,10,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Sathe Maternity Home,21,1,0,7,0,0,0,0,0,0,33,510,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Deshmukh Nursing Home,21,1,0,4,0,0,0,0,0,0,31,117,0,Resource-Rich Facilities
+WANADI-RAMTEKDI,4,Kamal Nursing Home & Maternity Home,21,1,0,5,0,0,0,0,0,0,74,260,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Prakash Eyes Hospital,28,1,0,2,0,0,0,0,0,0,61,454,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Sanjeevani Hospital,21,1,0,8,0,0,0,0,0,0,75,500,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,ENT & Eyes Hospital ( Sant Hospital ),29,1,0,6,0,0,0,0,0,0,51,189,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Aawari Hospital,21,1,0,8,0,0,0,0,0,0,51,7,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Kidny & Dialysis  Center ( Ambike Hospital ),33,1,0,12,0,0,0,0,0,0,33,275,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Sham Nursing Home,21,1,0,5,0,0,0,0,0,0,62,517,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Dharmadhikari Hospital,21,1,0,12,0,0,0,0,0,0,26,128,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Eye Hospital ( Dr. Bhats Eye Care Center ),28,1,0,2,0,0,0,0,0,0,31,194,0,Resource-Rich Facilities
+BHAVANI PETH,5,K.E.M. Hospital,42,1,1,568,0,0,0,0,1,0,5,251,3,Development Needs
+KOTHRUD-BAVDHAN,2,vatsal Hospital,11,1,0,4,0,0,0,0,0,0,33,698,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Samarth Hospital,9,1,0,1,0,0,0,0,0,0,26,493,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Shri Sai Sneh Diagnostic  Center Pvt. Ltd.,21,1,0,31,0,0,0,0,0,0,32,543,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Maher Nursing Home,21,1,0,5,0,0,0,0,0,0,26,352,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,N.M.Wadia Hospital,42,1,0,70,0,0,0,0,0,0,31,383,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Chaitanya Nursing Home,21,1,0,5,0,0,0,0,0,0,60,88,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Belsare ENT Hospital,7,1,0,2,0,0,0,0,0,0,78,58,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Bhalerao Prasuti Gruha,21,1,0,10,0,0,0,0,0,0,26,60,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Dr. S.D.Patil Eye Clinic & Hospital,30,1,0,2,0,0,0,0,0,0,31,167,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Suvidha Nursing Home,21,1,0,5,0,0,0,0,0,0,33,576,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Kumbhare Hospital,21,1,0,4,0,0,0,0,0,0,13,290,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Kurtkoti Nursing Home,21,1,0,5,0,0,0,0,0,0,33,292,0,Resource-Rich Facilities
+BIBEWADI,5,Dr. Kashyap Nursing Home,21,1,0,8,0,0,0,0,0,0,6,148,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Purohit Hospital,21,1,0,10,0,0,0,0,0,0,60,462,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Panchsheel Hospital,21,1,0,20,0,0,0,0,0,0,13,428,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Paras Nursing Home,21,1,0,2,0,0,0,0,0,0,60,431,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Dr. Parkhi Nursing Home,21,1,0,5,0,0,0,0,0,0,60,160,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Vyanketesh  General Hospital,21,1,0,5,0,0,0,0,0,0,33,613,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Modern Hospital,11,1,0,15,0,0,0,0,0,0,13,373,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,G.M.Babubhai Memorial Hospital,21,1,0,14,0,0,0,0,0,0,32,197,0,Resource-Rich Facilities
+BIBEWADI,5,"Ranka Medical Foundetion, Ranka Hospital",42,1,1,101,0,0,0,0,0,0,6,471,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Salunke Hospital,21,1,0,15,0,0,0,0,0,0,51,491,0,Resource-Rich Facilities
+AUNDH-BANER,2,Sanjeev Maternity & Surgical Hospital,21,1,0,15,0,0,0,0,0,0,0,498,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Kedarnath Nursing Home,21,1,0,24,0,0,0,0,0,0,51,269,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Kirad Hospital,11,1,0,10,0,0,0,0,0,0,13,277,0,Resource-Rich Facilities
+AUNDH-BANER,2,Jeevan Deep Medicare  Center,21,1,0,9,0,0,0,0,0,0,0,240,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Shri Samrath Hospital,23,1,0,6,0,0,0,0,0,0,78,546,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,PBMAS H.V.Desai Hospital,30,1,0,95,0,0,0,0,0,0,26,420,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Prabhudesai Eye Clinic,30,1,0,2,0,0,0,0,0,0,31,453,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Bhagirathi Child Hospital,40,1,0,8,0,0,0,0,0,0,75,59,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Inam Hospital Charitable Trust,21,1,0,8,0,0,0,0,0,0,51,232,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Dr. Gujrathi Clinic,21,1,0,4,0,0,0,0,0,0,31,144,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Usha Kiran Hospital,21,1,0,28,0,0,0,0,0,0,26,596,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Sadguru Nursing Home,21,1,0,6,0,0,0,0,0,0,62,481,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Patil Hospital,21,1,0,5,0,0,0,0,0,0,75,437,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,"Family Planning Association of India, Pune",9,1,0,9,0,0,0,0,0,0,61,196,0,Resource-Rich Facilities
+SINGHARD ROAD,3,M/s. Prachiti Hospital & Resarch Center,11,1,0,10,0,0,0,0,0,0,62,344,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Deenannath Mangeshkar Hospital,42,1,1,812,0,0,0,0,1,0,75,111,3,Development Needs
+KOTHRUD-BAVDHAN,2,Girija Nursing Home,21,1,0,10,0,0,0,0,0,0,33,207,0,Resource-Rich Facilities
+WANADI-RAMTEKDI,4,Anusaya Hospital,21,1,0,8,0,0,0,0,0,0,74,34,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Yashwant Hospital,21,1,0,7,0,0,0,0,0,0,62,625,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Chinmay Nursing Home ,21,1,0,5,0,0,0,0,0,0,31,99,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Bakshi Hospital,21,1,0,3,0,0,0,0,0,0,33,53,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Gayatri Hospital,21,1,0,7,0,0,0,0,0,0,75,204,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Ashwini Nursing Home & Maternity Hospital,21,1,0,5,0,0,0,0,0,0,33,45,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Dr. Konkar Nursing Home,21,1,0,4,0,0,0,0,0,0,78,152,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Nande Hospital,11,1,0,10,0,0,0,0,0,0,26,390,0,Resource-Rich Facilities
+AUNDH-BANER,2,Ajinkya Nursing Home,21,1,0,12,0,0,0,0,0,0,0,16,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Pandit Clinic,11,1,0,5,0,0,0,0,0,0,61,429,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Alatkar Hospital,21,1,0,8,0,0,0,0,0,0,26,20,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Wankhede Hospital,21,1,0,15,0,0,0,0,0,0,32,617,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Shah  Accident  Hospital,39,1,0,40,0,0,0,0,0,0,78,514,0,Resource-Rich Facilities
+AUNDH-BANER,2,Life Line Hospital,21,1,0,5,0,0,0,0,0,0,0,337,0,Resource-Rich Facilities
+BIBEWADI,5,Sangam Hospital,21,1,0,10,0,0,0,0,0,0,6,497,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Children Hospital,21,1,0,3,0,0,0,0,0,0,31,96,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Bidkar Nursing Home,11,1,0,4,0,0,0,0,0,0,61,71,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Patil Hospital,9,1,0,45,0,0,0,0,0,0,62,437,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Padalkar Pediatric & Nionetal Nursing Home,40,1,0,5,0,0,0,0,0,0,75,427,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Todmal Nursing Home,21,1,0,10,0,0,0,0,0,0,13,588,0,Resource-Rich Facilities
+AUNDH-BANER,2,Yashoda Nursing Home,21,1,0,4,0,0,0,0,0,0,0,622,0,Resource-Rich Facilities
+BIBEWADI,5,Harsh Hospital,11,1,0,15,0,0,0,0,0,0,6,220,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Polyclinic & Hospital,11,1,0,2,0,0,0,0,0,0,61,445,0,Resource-Rich Facilities
+AUNDH-BANER,2,Medipoint Hospital,42,1,1,102,0,0,0,0,0,0,0,367,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Kasturba Speciality Hospital,42,1,0,25,0,0,0,0,0,0,78,267,0,Resource-Rich Facilities
+BIBEWADI,4,Mother Care Clinic Nursing Home,11,1,0,2,0,0,0,0,0,0,6,377,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Dharma Orthopedic Center,39,1,0,6,0,0,0,0,0,0,51,127,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Badve Maternity & Nursing Home,23,1,0,5,0,0,0,0,0,0,13,51,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Niranjan Nursing Home,21,1,0,15,0,0,0,0,0,0,31,403,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Kulkarni Hospital & Daigonostic Center,11,1,0,7,0,0,0,0,0,0,75,289,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Bumb Nursing Home,21,1,0,15,0,0,0,0,0,0,51,79,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Mantri Hospital,11,1,0,10,0,0,0,0,0,0,75,360,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Nayan Jyot Eye Clinic & Lesar Center,11,1,0,2,0,0,0,0,0,0,61,395,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Amit Hospital,11,1,0,8,0,0,0,0,0,0,78,24,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Pramila Care Center,11,1,0,6,0,0,0,0,0,0,75,457,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Shahade Hospital,11,1,0,5,0,0,0,0,0,0,31,515,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Trimurti Hospital,21,1,0,20,0,0,0,0,0,0,62,590,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Aadarsh Nursing Home,23,1,0,12,0,0,0,0,0,0,51,3,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,3,Senses ENT Hospital & Clinic,7,1,0,2,0,0,0,0,0,0,33,513,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Agarwal Maternity & General Hospital,21,1,0,17,0,0,0,0,0,0,51,12,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Nobal Hospital,21,1,1,8,0,0,0,0,1,0,32,406,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Rakshak Hospital,11,1,1,60,0,0,0,0,0,0,51,468,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Chaitanya Hospital & Nursing Home,21,1,0,25,0,0,0,0,0,0,60,86,0,Resource-Rich Facilities
+AUNDH-BANER,2,Surya Netralaya,30,1,0,2,0,0,0,0,0,0,0,570,0,Resource-Rich Facilities
+BHAVANI PETH,5,Vimal Hospital,21,1,0,5,0,0,0,0,0,0,5,606,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Chaitanya Hospital General Medicin Hospital,11,1,0,4,0,0,0,0,0,0,62,87,0,Resource-Rich Facilities
+AUNDH-BANER,2,Dr. Sarode Nursing Home,11,1,0,3,0,0,0,0,0,0,0,170,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Birajdar Nursing Home,23,1,0,3,0,0,0,0,0,0,26,72,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Sandip Wagh Eye Center,30,1,0,2,0,0,0,0,0,0,61,496,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,C.D.C. & Center for Laproscopy Surgery,11,1,0,5,0,0,0,0,0,0,61,80,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Shri Sainath Nursing Home,21,1,0,4,0,0,0,0,0,0,60,545,0,Resource-Rich Facilities
+WA,3,Eye Care Center,30,1,0,2,0,0,0,0,0,0,73,193,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Sanjeevani Nursing Home,21,1,0,30,0,0,0,0,0,0,26,501,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Sirin  Hospital Pvt. Ltd.,21,1,0,26,0,0,0,0,0,0,78,558,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Sunita Nursing Home,21,1,0,5,0,0,0,0,0,0,26,566,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Day Care  Orthopedic Hospital,39,1,0,2,0,0,0,0,0,0,31,109,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Prakash Nursing Home,11,1,0,4,0,0,0,0,0,0,33,456,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Disha Nursing Home,11,1,0,11,0,0,0,0,0,0,60,131,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Chaitanya Hospital,21,1,0,18,0,0,0,0,0,0,75,85,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Capital Polyclinic Health Hospital,11,1,0,9,0,0,0,0,0,0,62,83,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Kaluskar Hospital & Laboretory,21,1,0,5,0,0,0,0,0,0,61,255,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Shri Samrath Hospital,11,1,0,20,0,0,0,0,0,0,13,546,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Borse Nursing Home,21,1,0,7,0,0,0,0,0,0,33,78,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Vaibhavi Hospital,21,1,0,30,0,0,0,0,0,0,26,600,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Unity Ortho & Eyes Hospital,39,1,0,6,0,0,0,0,0,0,32,595,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,High-Line Hospital,11,1,0,15,0,0,0,0,0,0,51,225,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Machve Hospital,21,1,0,5,0,0,0,0,0,0,33,345,0,Resource-Rich Facilities
+BIBEWADI,5,Mehta Nursing Home,21,1,0,5,0,0,0,0,0,0,6,371,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Ganga Nursing Home,21,1,0,7,0,0,0,0,0,0,13,203,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,"Konkan Mitra Mandal Trust""s Sahyadri  super Speciality Hospital",42,1,1,202,0,0,0,0,1,0,61,281,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Paranjpe Eye Clinic & Surgery Center,11,1,0,1,0,0,0,0,0,0,61,430,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Sindhu Nursing Home,11,1,0,16,0,0,0,0,0,0,33,557,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Sai nursing Home,21,1,0,8,0,0,0,0,0,0,78,488,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Ashirwad Hospital,21,1,0,15,0,0,0,0,0,0,62,40,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Accurate Diagnostic Pvt. Ltd.,21,1,0,40,0,0,0,0,0,0,61,8,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Suyash Nursing Home & General Nursing Hospital,21,1,0,7,0,0,0,0,0,0,33,579,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Shri Datta Hospital & Nursing Home,11,1,0,2,0,0,0,0,0,0,51,539,0,Resource-Rich Facilities
+AUNDH-BANER,2,Divya Clinic,21,1,0,2,0,0,0,0,0,0,0,132,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Gurukrupa Maternity Home,21,1,0,3,0,0,0,0,0,0,62,218,0,Resource-Rich Facilities
+BIBEWADI,5,Dugad Hospital,21,1,0,15,0,0,0,0,0,0,6,183,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Bharti Hospital,42,1,1,831,0,0,0,0,1,0,60,65,3,Development Needs
+NAGAR ROAD- VADGOANSHERI,1,Nikhil polyclinic,21,1,0,12,0,0,0,0,0,0,51,400,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Anand eye care,30,1,0,3,0,0,0,0,0,0,78,29,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,1,Shri Sainath Ho spital,11,1,0,5,0,0,0,0,0,0,60,544,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Aadarsh Hospital,21,1,0,25,0,0,0,0,0,0,32,2,0,Resource-Rich Facilities
+AUNDH-BANER,2,Parmar Hospital,21,1,0,22,0,0,0,0,0,0,0,434,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Shrisai Prasad Hospital,11,1,0,5,0,0,0,0,0,0,60,549,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Londhe Hospital,21,1,0,5,0,0,0,0,0,0,26,342,0,Resource-Rich Facilities
+BIBEWADI,5,Chintamani Hospital,11,1,1,44,0,0,0,0,0,0,6,100,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Rutu Anand Hospital,21,1,0,7,0,0,0,0,0,0,78,479,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Yashraj Nursing Home,21,1,0,6,0,0,0,0,0,0,32,623,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Bidaye Hospital pvt.ltd.,21,1,0,15,0,0,0,0,0,0,31,70,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Mankar children & eye hospital,40,1,0,12,0,0,0,0,0,0,62,356,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Deccan Center,11,1,0,2,0,0,0,0,0,0,61,110,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,anand hospital,11,1,0,15,0,0,0,0,0,0,60,636,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Dr. Gogate  eye clinic,30,1,0,3,0,0,0,0,0,0,13,143,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,vinayak netralaya,30,1,0,2,0,0,0,0,0,0,33,701,0,Resource-Rich Facilities
+BHAVANI PETH,5,City hospital & daigonestic center,21,1,0,15,0,0,0,0,0,0,5,103,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Dr. jadhav eye foundetion resarch & devolapment center,30,1,0,3,0,0,0,0,0,0,51,181,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,khare eye institute,30,1,0,5,0,0,0,0,0,0,61,653,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,"sahyadri hospital , Kothrud",42,1,1,30,0,0,0,0,1,0,33,673,0,Resource-Rich Facilities
+BIBEWADI,5,Dr. bande hospital,21,1,0,5,0,0,0,0,0,0,6,179,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,prashant hospital maternity & general hospital,21,1,0,4,0,0,0,0,0,0,61,666,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,sunny  nursing home,21,1,0,5,0,0,0,0,0,0,33,693,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,saideep eye hospital,30,1,0,2,0,0,0,0,0,0,78,675,0,Resource-Rich Facilities
+BIBEWADI,5,Trimal Hospital,21,1,0,3,0,0,0,0,0,0,6,589,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,dr. pabalkar nursing home,21,1,0,4,0,0,0,0,0,0,31,645,0,Resource-Rich Facilities
+WANADI-RAMTEKDI,4,vatsalya  children hospital,40,1,0,2,0,0,0,0,0,0,74,699,0,Resource-Rich Facilities
+AUNDH-BANER,2,Healthplus nursing home,21,1,0,8,0,0,0,0,0,0,0,223,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Shraddha Hospital ,23,1,0,6,0,0,0,0,0,0,51,529,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,pratibha nursing home,11,1,0,5,0,0,0,0,0,0,61,668,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Mantri Hospital,11,1,0,15,0,0,0,0,0,0,13,360,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Nobel  Hospital,42,1,1,250,0,0,0,0,1,0,26,407,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,chavan nursing home,21,1,0,3,0,0,0,0,0,0,31,641,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,punrvasu chikitsalaya,0,1,0,6,0,0,0,0,0,0,61,669,0,Resource-Rich Facilities
+BIBEWADI,5,suraj hospital,11,1,0,15,0,0,0,0,0,0,6,694,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,shashwat health pvt.ltd shashwat Hospital.,21,1,1,56,0,0,0,0,1,0,33,679,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Anand hospital,21,1,0,4,0,0,0,0,0,0,75,30,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,k.k. hospital,11,1,0,25,0,0,0,0,0,0,51,651,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,amrut hospital,11,1,0,9,0,0,0,0,0,0,13,635,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,sane guruji aarogya kendra,21,1,1,250,0,0,0,0,1,0,26,676,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,shushurt multi -speciality  hospital,21,1,0,4,0,0,0,0,0,0,78,690,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,kumbhare hospital,11,1,0,1,0,0,0,0,0,0,13,657,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,yashwant eye clinic & hospital,30,1,0,2,0,0,0,0,0,0,60,705,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,sapna clinic,11,1,0,3,0,0,0,0,0,0,60,677,0,Resource-Rich Facilities
+BIBEWADI,5,chandralok hospital,21,1,0,18,0,0,0,0,0,0,6,640,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,5,The eye foundetion,30,1,0,2,0,0,0,0,0,0,32,586,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Oyster  & pearl hospital pvt.ltd.,23,1,1,107,0,0,0,0,0,0,61,419,0,Resource-Rich Facilities
+WANADI-RAMTEKDI,4,"Ayodhya chaitrtable trust, ayodhya general hospital",11,1,0,10,0,0,0,0,0,0,74,50,0,Resource-Rich Facilities
+BHAVANI PETH,5,indian red cross soc. Nursing home,11,1,0,4,0,0,0,0,0,0,5,650,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Ramkrishna  hospital,11,1,0,7,0,0,0,0,0,0,31,470,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,center for joint repleacment surgary,39,1,1,54,0,0,0,0,1,0,61,639,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Rakhi nursing home,21,1,0,5,0,0,0,0,0,0,61,467,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Samarth Hospital,21,1,0,15,0,0,0,0,0,0,13,493,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Mohan ent clinic,7,1,0,2,0,0,0,0,0,0,60,375,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,medileser - vision correction center,30,1,0,1,0,0,0,0,0,0,33,658,0,Resource-Rich Facilities
+BIBEWADI,5,Rahi health care,11,1,0,12,0,0,0,0,0,0,6,464,0,Resource-Rich Facilities
+BIBEWADI,5,"sahydri hospital ltd. Sahyadri Hospital, Bibvewadi",42,1,1,37,0,0,0,0,1,0,6,674,0,Resource-Rich Facilities
+AUNDH-BANER,2,Manswardhan diduction rehabliation mental health,11,1,0,40,0,0,0,0,0,0,0,359,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,varadvinayak hospital,11,1,0,5,0,0,0,0,0,0,26,696,0,Resource-Rich Facilities
+BIBEWADI,5,shri balaji eye hospital,30,1,0,2,0,0,0,0,0,0,6,687,0,Resource-Rich Facilities
+BHAVANI PETH,5,Dhanwantari hospital,11,1,0,16,0,0,0,0,0,0,5,126,0,Resource-Rich Facilities
+BIBEWADI,5,yashashree  hospital,23,1,0,15,0,0,0,0,0,0,6,704,0,Resource-Rich Facilities
+BHAVANI PETH,5,Meera hospital,11,1,0,50,0,0,0,0,0,0,5,370,0,Resource-Rich Facilities
+BIBEWADI,5,Vinayak Hospital,11,1,0,15,0,0,0,0,0,0,6,608,0,Resource-Rich Facilities
+WANADI-RAMTEKDI,4,inamdar hospital ( c.i.m.e.t.),42,1,1,46,0,0,0,0,1,0,74,649,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Bliz fertility center & pune center for womens health,21,1,0,3,0,0,0,0,0,0,13,74,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,aabane hospital,11,1,0,15,0,0,0,0,0,0,26,632,0,Resource-Rich Facilities
+WANADI-RAMTEKDI,4,aakankasha eye clinic day care center,30,1,0,2,0,0,0,0,0,0,74,633,0,Resource-Rich Facilities
+BIBEWADI,5,Dr. Sada multi specality hospital,21,1,0,9,0,0,0,0,0,0,6,169,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,"Lata Mangeshkar Medical Foundation""s Mai Mangeshkar Hospital",42,1,1,45,0,0,0,0,1,0,75,295,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Apurva panchkarma center,0,1,0,5,0,0,0,0,0,0,60,36,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,shotri nursing home,11,1,0,5,0,0,0,0,0,0,60,685,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,prathmesh Accident & orthopedic Hospital,11,1,0,4,0,0,0,0,0,0,32,667,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,s.p.deshpande eye clinic,30,1,0,2,0,0,0,0,0,0,31,671,0,Resource-Rich Facilities
+AUNDH-BANER,2,om hopital,21,1,0,7,0,0,0,0,0,0,0,661,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Dr. chitale ent hospital,7,1,0,2,0,0,0,0,0,0,31,180,0,Resource-Rich Facilities
+SINGHARD ROAD,3,omkar hospital,11,1,0,6,0,0,0,0,0,0,62,662,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,ganga maternity & general hospital,21,1,0,15,0,0,0,0,0,0,51,648,0,Resource-Rich Facilities
+AUNDH-BANER,2,Renu hospital,11,1,0,4,0,0,0,0,0,0,0,474,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Oyster  & pearl Tulip  hospital ,11,1,1,104,0,0,0,0,0,0,61,418,0,Resource-Rich Facilities
+BIBEWADI,5,Gujar children hospital,40,1,0,7,0,0,0,0,0,0,6,214,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,vibhute hospital,11,1,0,15,0,0,0,0,0,0,31,700,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,skin citi hospital,11,1,0,18,0,0,0,0,0,0,13,692,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Medipoint hospital,21,1,0,37,0,0,0,0,0,0,13,368,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,ayris eye care,30,1,0,2,0,0,0,0,0,0,75,637,0,Resource-Rich Facilities
+AUNDH-BANER,2,prakash netralaya,30,1,0,2,0,0,0,0,0,0,0,665,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,shri maternity & nursing home,11,1,0,8,0,0,0,0,0,0,75,689,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,kohkade hospital,21,1,0,51,0,0,0,0,0,0,51,655,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,parvati general hospital,21,1,0,15,0,0,0,0,0,0,31,663,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,vinod memorial multispeciality hospital,21,1,1,51,0,0,0,0,0,0,78,702,0,Resource-Rich Facilities
+SINGHARD ROAD,3,chinchnikar orthopedic & maternity center,21,1,0,5,0,0,0,0,0,0,62,642,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Lifeline multispecaity Hospital,21,1,0,10,0,0,0,0,0,0,32,338,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Bhide hospital orthopedic divission,39,1,0,5,0,0,0,0,0,0,31,68,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Rakshak multi specility hospital,11,1,0,27,0,0,0,0,0,0,62,469,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,universal hospital,21,1,0,30,0,0,0,0,0,0,31,695,0,Resource-Rich Facilities
+BIBEWADI,5,vardhman eye care ,30,1,0,2,0,0,0,0,0,0,6,697,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,LOC HEALTHCARE LLP,2,1,0,50,0,0,0,0,0,0,31,294,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,netra seva kendra ( jan kalyan eye bank ),30,1,0,8,0,0,0,0,0,0,31,660,0,Resource-Rich Facilities
+BIBEWADI,5,rao nursing home,42,1,1,123,0,0,0,0,1,0,6,670,0,Resource-Rich Facilities
+SINGHARD ROAD,3,shendkar health care  hospitality services pvt. Ltd. Global Hospital & Reserch Institute,42,1,1,108,0,0,0,0,1,0,62,681,0,Resource-Rich Facilities
+AUNDH-BANER,2,adkar hospital & resarch institute pvt.ltd.( sai shree hospital )/ Orthopedic Centre,39,1,0,8,0,0,0,0,0,0,0,634,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,shri eye & dental clinic,30,1,0,2,0,0,0,0,0,0,61,688,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Naik nimbalkar hospital ( day - care eye hospital ),30,1,0,3,0,0,0,0,0,0,60,387,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,kumbhare clinic & nursing home,21,1,0,16,0,0,0,0,0,0,13,656,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,emrald endoscopy center,11,1,0,8,0,0,0,0,0,0,61,646,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Grant medical foundetion Ruby Holl Clinic,42,1,1,553,0,0,0,0,1,0,13,212,3,Development Needs
+WARJE-KARVENAGAR,3,galaxcy care laproscopy institute pvt. Ltd.,42,1,1,100,0,0,0,0,1,0,75,647,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,3,shivneri hospital,11,1,0,6,0,0,0,0,0,0,32,684,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,dr. manohar joshi memorial hospital (M.J.M. Hospital),21,1,1,50,0,0,0,0,0,0,61,644,0,Resource-Rich Facilities
+BIBEWADI,5,Ishwar krupa nursing home,11,1,0,16,0,0,0,0,0,0,6,236,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,sidhhi hospital laproscopy center,21,1,1,49,0,0,0,0,1,0,32,691,0,Resource-Rich Facilities
+SINGHARD ROAD,3,wadekar nursing home ( maternity  &  ENT home  ),21,1,0,10,0,0,0,0,0,0,62,703,0,Resource-Rich Facilities
+AUNDH-BANER,2,Aims hospital & resarch center,42,1,1,101,0,0,0,0,1,0,0,14,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,kala clinic & nursing home,23,1,0,2,0,0,0,0,0,0,32,652,0,Resource-Rich Facilities
+AUNDH-BANER,2,shaswat hospital ( aundh ),21,1,1,61,0,0,0,0,1,0,0,680,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Dyandeep general hospital,21,1,0,5,0,0,0,0,0,0,51,185,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Devshri Hospital ,21,1,0,2,0,0,0,0,0,0,60,119,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Suyog Narsing Home Pra. Ltd. ,21,1,0,25,0,0,0,0,0,0,60,580,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Parivartan Ayurved Hospital,0,1,0,4,0,0,0,0,0,0,33,433,0,Resource-Rich Facilities
+WANADI-RAMTEKDI,4,Grant medical foundetion Ruby Holl Clinic- wanovari,42,1,1,120,0,0,0,0,1,0,74,213,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Ashswin Hospital,21,1,0,4,0,0,0,0,0,0,31,41,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Ashirvad ENT And Maternity Hospital,20,1,0,4,0,0,0,0,0,0,26,39,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Chandan Nagar Nursing Home,11,1,0,6,0,0,0,0,0,0,51,90,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Saikrupa Narsing Home,23,1,0,5,0,0,0,0,0,0,31,489,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Yashda Hospital,11,1,0,16,0,0,0,0,0,0,31,621,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,5,Parvati Ganral Hospital,21,1,0,5,0,0,0,0,0,0,60,435,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,"Famili Planing Asociation Of India, Pune",11,1,0,11,0,0,0,0,0,0,33,195,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,3,Contacare Eye Hospital,30,1,0,14,0,0,0,0,0,0,33,105,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,shivam hospital,21,1,0,15,0,0,0,0,0,0,26,683,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Life Care Hospital,21,1,0,8,0,0,0,0,0,0,26,336,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Kolambia Ashia Hospital Pr. Ltd.,42,1,1,100,0,0,0,0,1,0,51,279,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Devyani Multy Speciality Hospital,42,1,1,120,0,0,0,0,1,0,75,121,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Dhanwantari Clinic,23,1,0,4,0,0,0,0,0,0,32,124,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Sahyadri Hospitals Ltd.-Sahyadri Super Speciality Hospital (Nagar Road),42,1,1,161,0,0,0,0,1,0,51,486,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Kalyani Hospital ,11,1,0,16,0,0,0,0,0,0,31,256,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Chandrama Clinic,21,1,1,2,0,0,0,0,0,0,31,92,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Lodha Hospital And Maternity Home,21,1,0,10,0,0,0,0,0,0,75,339,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,nayantara eye clinic,27,1,0,3,0,0,0,0,0,0,33,659,0,Resource-Rich Facilities
+SINGHARD ROAD,3,pharande eye hospital & phaco center,27,1,0,2,0,0,0,0,0,0,62,664,0,Resource-Rich Facilities
+BHAVANI PETH,5,sheth tarachand ramanath charitable aurvedic hospital,0,1,0,236,0,0,0,0,0,0,5,682,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,bharti ayurved hospital,0,1,0,100,0,0,0,0,0,0,60,638,0,Resource-Rich Facilities
+AUNDH-BANER,2,Datar Hospital,21,1,0,7,0,0,0,0,0,0,0,107,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Vision next,31,1,0,2,0,0,0,0,0,0,61,611,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Vision Eye Center,27,1,0,1,0,0,0,0,0,0,33,610,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Janani Nursing Home ,23,1,0,3,0,0,0,0,0,0,33,238,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Chhaya Hospital,21,1,0,10,0,0,0,0,0,0,26,95,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Gurdeo Nursing Home,21,1,0,12,0,0,0,0,0,0,62,217,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Matruchaya Nursing Home,21,1,0,10,0,0,0,0,0,0,75,365,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Aadhar Hospital,21,1,0,3,0,0,0,0,0,0,60,4,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Contacare Eye Hospital,27,1,0,15,0,0,0,0,0,0,26,105,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Bharti Homeopathic Hospital,13,1,0,100,0,0,0,0,0,0,60,64,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Alatkar Hospital,21,1,0,15,0,0,0,0,0,0,26,20,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Dhanwantari Hospital,21,1,0,17,0,0,0,0,0,0,78,125,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Lokmanya hospital Pvt. Ltd.,39,1,0,20,0,0,0,0,0,0,60,341,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Shatayu Nursing Home,21,1,0,5,0,0,0,0,0,0,26,525,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Meera Matrnity & General Hospital,21,1,0,3,0,0,0,0,0,0,26,369,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Atharv Hospital,21,1,0,10,0,0,0,0,0,0,61,47,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Sarwat Hospital,23,1,0,25,0,0,0,0,0,0,32,508,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Navjeevan Nursing Home,23,1,0,10,0,0,0,0,0,0,26,394,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Tanmay Nursing Home,21,1,0,5,0,0,0,0,0,0,26,585,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Shantalaxmi Clinic,11,1,0,2,0,0,0,0,0,0,31,519,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Dr. Bhange's Eye Day Care Center,27,1,0,2,0,0,0,0,0,0,31,137,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Gold Rush Hospital,21,1,0,23,0,0,0,0,0,0,51,211,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Modi Clinic,11,1,0,4,0,0,0,0,0,0,60,374,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Mrunmayee Health Cear pvt. Ltd. ( sangamnerkar Hospital ),21,1,0,30,0,0,0,0,0,0,51,380,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Sharad Hospital,22,1,0,27,0,0,0,0,0,0,62,520,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Pearl womens hospital & yash IVF`,21,1,0,15,0,0,0,0,0,0,61,441,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Samarth Nursing Home,11,1,0,4,0,0,0,0,0,0,60,494,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Vinayak Hospital,21,1,0,20,0,0,0,0,0,0,75,608,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Samarth Nursing Home,21,1,0,2,0,0,0,0,0,0,60,494,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Anup Nursing Home,21,1,0,10,0,0,0,0,0,0,51,33,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,3,Prabhudesai Eye Clinic,26,1,0,4,0,0,0,0,0,0,33,453,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Adnya Clinic & Nursing Home,21,1,0,5,0,0,0,0,0,0,26,11,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Lotus Hospital,11,1,0,15,0,0,0,0,0,0,26,343,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,3,Gems Hospital & Enodoscopy Center,21,1,0,15,0,0,0,0,0,0,33,205,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Shree Nursnig Home,21,1,0,15,0,0,0,0,0,0,75,533,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Zed Plus Accident Hospital & Nursing Home,21,1,0,20,0,0,0,0,0,0,26,630,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Shree Gurudatta Specaility Hospital,21,1,0,10,0,0,0,0,0,0,26,532,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Siddiqua Hospital & Nursing Home,23,1,0,6,0,0,0,0,0,0,32,556,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Pioneer Medilesar Pvt. Ltd.,27,1,0,3,0,0,0,0,0,0,61,444,0,Resource-Rich Facilities
+AUNDH-BANER,2,Pune Netraylaya,27,1,0,3,0,0,0,0,0,0,0,461,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Vastalya Hospital,23,1,0,4,0,0,0,0,0,0,31,602,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Om Hospital,11,1,0,5,0,0,0,0,0,0,32,414,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,CT Nursing Home,11,1,0,8,0,0,0,0,0,0,78,81,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Kalyani Nursing Home,8,1,0,16,0,0,0,0,0,0,51,257,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Nova Pluse IVF Clinic Pvt. Ltd.,8,1,0,9,0,0,0,0,0,0,31,409,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Ameya Nursing Home,8,1,0,8,0,0,0,0,0,0,78,23,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,SUMITRA PARALYSIS CARE CENTRE,8,1,0,5,0,0,0,0,0,0,60,480,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Poona Leasar Center,24,1,0,2,0,0,0,0,0,0,75,450,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Neo Hospital,8,1,0,6,0,0,0,0,0,0,31,396,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Noble Hospital-,42,1,0,80,0,0,0,0,0,0,26,408,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Shraddha Nursing Home,21,1,0,10,0,0,0,0,0,0,62,530,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Om Nursing Home,21,1,0,11,0,0,0,0,0,0,62,415,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Sai Netralay & specality Clinic,27,1,0,5,0,0,0,0,0,0,60,487,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,kids clinic (I) pvt. Ltd.cloud Cline  nine Hospital,23,1,1,49,0,0,0,0,0,0,61,654,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Hope Nursing Home,8,1,0,5,0,0,0,0,0,0,13,227,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Speciality Day care Centre,8,1,0,10,0,0,0,0,0,0,33,562,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Zenith Medicare Pvt. Ltd.,8,1,0,15,0,0,0,0,0,0,26,631,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Kirad Nursing Home,21,1,0,15,0,0,0,0,0,0,51,278,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Kamalnayan Nursing Home/Hospital,8,1,0,8,0,0,0,0,0,0,31,261,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,shree Hospital Criticare & Trauma Centre Pvt.Ltd.,42,1,1,72,0,0,0,0,1,0,51,686,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Chaitanya Eye Clinic & phaco centre,27,1,0,2,0,0,0,0,0,0,31,84,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Apolo Speciality Hospitals Pvt. Ltd.,42,1,0,34,0,0,0,0,0,0,31,35,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,"Welfare Medical Foundation""s Willoo Poonawala Memorial Hopstial",21,1,1,59,0,0,0,0,1,0,26,619,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Indira IVF Hospital pvt. Ltd.,21,1,0,25,0,0,0,0,0,0,78,233,0,Resource-Rich Facilities
+AUNDH-BANER,2,Ashwini Hospital,23,1,0,20,0,0,0,0,0,0,0,43,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Bansal Medical Foundation,8,1,0,1,0,0,0,0,0,0,13,55,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Healing Hands Clinic Pvt. Ltd.,8,1,0,3,0,0,0,0,0,0,31,222,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Ashtang Ayurved Rugnalaya,23,1,0,25,0,0,0,0,0,0,31,42,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Asthetic Medispa Pvt. Ltd. (Day-care),8,1,0,1,0,0,0,0,0,0,61,46,0,Resource-Rich Facilities
+AUNDH-BANER,2,Umarji mother & child care,21,1,0,35,0,0,0,0,0,0,0,593,0,Resource-Rich Facilities
+AUNDH-BANER,2,Sanjivan Hospital,23,1,0,8,0,0,0,0,0,0,0,502,0,Resource-Rich Facilities
+BIBEWADI,5,Vighnaharta Hospital,21,1,0,22,0,0,0,0,0,0,6,605,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Bavdhan medicare center,21,1,0,10,0,0,0,0,0,0,33,57,0,Resource-Rich Facilities
+AUNDH-BANER,2,ELPIS IVF & Maternity Home,21,1,0,10,0,0,0,0,0,0,0,188,0,Resource-Rich Facilities
+AUNDH-BANER,2,Unity Hospital,21,1,0,9,0,0,0,0,0,0,0,594,0,Resource-Rich Facilities
+AUNDH-BANER,2,National Institute of Ophalmology (Neo Aundh),27,1,0,10,0,0,0,0,0,0,0,392,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Sagar Nursing Home,21,1,0,15,0,0,0,0,0,0,51,484,0,Resource-Rich Facilities
+AUNDH-BANER,2,Vimal Nursing Home,21,1,0,7,0,0,0,0,0,0,0,607,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Eva Nursing Home,21,1,0,8,0,0,0,0,0,0,62,192,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Moraya Nursing Home LLP,21,1,0,7,0,0,0,0,0,0,32,376,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Healing Hands Clinic Pvt. Ltd.,8,1,0,17,0,0,0,0,0,0,13,222,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Balaji Hospital,8,1,0,5,0,0,0,0,0,0,51,54,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Prerana Nursing Home,21,1,0,5,0,0,0,0,0,0,32,459,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Kids clinic (I) pvt. Ltd. cloud nine Hospital,8,1,1,37,0,0,0,0,0,0,51,276,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Kurkute Hospital,21,1,0,5,0,0,0,0,0,0,51,291,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Dr. Tepan Memorial Hospital,21,1,0,5,0,0,0,0,0,0,61,175,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Siddharth Nursing Home,21,1,1,5,0,0,0,0,0,0,75,554,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Sai nursing Home,21,1,0,4,0,0,0,0,0,0,51,488,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Chandra Nursing Home,21,1,0,4,0,0,0,0,0,0,32,91,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Siddhivinayak Hopital,21,1,0,27,0,0,0,0,0,0,32,555,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Aisan Eye Hospital & laser Institute,25,1,0,1,0,0,0,0,0,0,13,15,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Maheshwari Multispeciality Healthcare & Reserch centre LLP,42,1,0,50,0,0,0,0,0,0,26,353,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,CT Nursing Home          (Unit-2),21,1,0,20,0,0,0,0,0,0,78,82,0,Resource-Rich Facilities
+AUNDH-BANER,2,Dhanwantari Hospital,21,1,0,9,0,0,0,0,0,0,0,125,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Usha Maternity Home,21,1,0,5,0,0,0,0,0,0,26,597,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Patil Multispeciality Hospital & Laproscopy Center,21,1,0,15,0,0,0,0,0,0,60,438,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Akash Eye Clinic & laser Centre,27,1,0,5,0,0,0,0,0,0,51,17,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Dr. Damale skin Clinic,8,1,0,2,0,0,0,0,0,0,51,139,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Dr. Nakhare Clinic,8,1,0,10,0,0,0,0,0,0,61,156,0,Resource-Rich Facilities
+AUNDH-BANER,2,"Adakar Hospital & Reserch Institutes, Saishree Hospital",39,1,0,30,0,0,0,0,0,0,0,9,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Kamat hospital,8,1,0,10,0,0,0,0,0,0,51,263,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Dr. Jadhav kids Hospital/ Dr. Jadhav Lahan Mulanche Hospital,40,1,0,10,0,0,0,0,0,0,51,146,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,APS Nursing Home,21,1,0,15,0,0,0,0,0,0,26,1,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Prakash Hospital,21,1,0,17,0,0,0,0,0,0,26,455,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,shashwat Hospital (Medical Wing),8,1,0,10,0,0,0,0,0,0,33,678,0,Resource-Rich Facilities
+BHAVANI PETH,5,"""18.52 North"" Centre For Hand & wrist surgery",8,1,0,2,0,0,0,0,0,0,5,0,0,Resource-Rich Facilities
+AUNDH-BANER,2,Nucare Hospital,21,1,0,25,0,0,0,0,0,0,0,410,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,OM Eye Care,26,1,0,3,0,0,0,0,0,0,78,412,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Axix Eye Clinic,26,1,0,3,0,0,0,0,0,0,33,49,0,Resource-Rich Facilities
+AUNDH-BANER,2,Jupiter Lifeline Hospitals Ltd.,42,1,1,178,0,0,0,0,1,0,0,250,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Rising Medicare Hospital,42,1,1,104,0,0,0,0,1,0,51,475,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,New Pune Hospital & Nursing Home,21,1,0,10,0,0,0,0,0,0,32,398,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Dhande Hospital,21,1,0,7,0,0,0,0,0,0,33,123,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Vaibhav Nursing Home,21,1,0,6,0,0,0,0,0,0,78,599,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Ingale womens Hospital,23,1,0,2,0,0,0,0,0,0,75,235,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Walimbe Eye Clinic,38,1,0,5,0,0,0,0,0,0,60,615,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Chintamani Hospital,21,1,0,5,0,0,0,0,0,0,51,100,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Shri Nursing Home,21,1,0,10,0,0,0,0,0,0,62,542,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Gandhi Hospital,8,1,0,5,0,0,0,0,0,0,26,202,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Sanjivani Nurinsg Home,23,1,0,6,0,0,0,0,0,0,60,503,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Poona Eye Care & Pvt. Ltd.,27,1,0,2,0,0,0,0,0,0,61,448,0,Resource-Rich Facilities
+BHAVANI PETH,5,Namtra Nursing Home,8,1,0,4,0,0,0,0,0,0,5,388,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,chordiya nursing home,21,1,0,10,0,0,0,0,0,0,32,643,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Royal Hospital,8,1,0,6,0,0,0,0,0,0,32,477,0,Resource-Rich Facilities
+AUNDH-BANER,2,Zanwar Felicity Pvt. Ltd. (Healing Hands Clinic),8,1,0,17,0,0,0,0,0,0,0,629,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Blossoms Women Care,23,1,0,4,0,0,0,0,0,0,61,75,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,Laxmi Clinic,21,1,0,9,0,0,0,0,0,0,31,335,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Glam-x Aesthetic Centre,8,1,0,3,0,0,0,0,0,0,26,208,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,New Sofiya Hospital,8,1,0,11,0,0,0,0,0,0,32,399,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Hi-Tech Eye Surgery & Leser Centre,27,1,0,2,0,0,0,0,0,0,32,224,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,National Hospital,21,1,0,27,0,0,0,0,0,0,32,391,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Krishna Prabhu Hospital,8,1,0,20,0,0,0,0,0,0,60,285,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Ashwini Nursing Home,21,1,0,10,0,0,0,0,0,0,51,44,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Pune Fertility Centre,8,1,0,2,0,0,0,0,0,0,61,460,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Pawar Surgical Hospital,41,1,0,10,0,0,0,0,0,0,26,440,0,Resource-Rich Facilities
+KASBA-VISHRAM,5,"Om Eye Clinic & laser Centre, Day-care",37,1,0,1,0,0,0,0,0,0,31,413,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Dr. Mhaske Hospital & reserch Centre Pvt. Ltd.,12,1,0,15,0,0,0,0,0,0,26,154,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Shinde Hospital & Nursing Home,21,1,0,5,0,0,0,0,0,0,62,526,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Khade Chinldren Hospital,40,1,0,10,0,0,0,0,0,0,61,274,0,Resource-Rich Facilities
+BIBEWADI,5,Shreeram Eye & Dental Care Centre,27,1,0,1,0,0,0,0,0,0,6,535,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Samarth Eye Clinic & Day-Care Centre,27,1,0,2,0,0,0,0,0,0,62,492,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Jehangir Speciality Hospital (Unit Of Principal HealthCare & Wellness Pvt. Ltd.,32,1,1,31,0,0,0,0,1,0,33,244,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Yash Eye Clinic,37,1,0,4,0,0,0,0,0,0,33,620,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Navjeevan Nursing Home,1,1,0,25,0,0,0,0,0,0,26,394,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Anuja Hospital,12,1,0,6,0,0,0,0,0,0,62,31,0,Resource-Rich Facilities
+WARJE-KARVENAGAR,3,Borikar Hospital,12,1,0,24,0,0,0,0,0,0,75,77,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Divya Jyot Hospital,37,1,0,2,0,0,0,0,0,0,33,133,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,sahyadri Hospitals Ltd.-Sahyadri Super Speciality Hospital (Hadpasar),42,1,1,138,0,0,0,0,1,0,26,672,0,Resource-Rich Facilities
+YERAWADA-KALAS-DHANORI,1,Bhimrao Tidke Patil MultiSpeciality Hospital Pvt. Ltd.,21,1,0,35,0,0,0,0,0,0,78,69,0,Resource-Rich Facilities
+SAHAKARNAGAR-DHANKWADI,3,Poona Preventive Cardiology Centre,35,1,0,5,0,0,0,0,0,0,60,451,0,Resource-Rich Facilities
+AUNDH-BANER,2,Embrio IVF Centre,17,1,0,4,0,0,0,0,0,0,0,191,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Dr. Dudhbhate Netralaya & Retina Centre,37,1,0,2,0,0,0,0,0,0,62,141,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Shatayu Hospital,21,1,0,16,0,0,0,0,0,0,62,524,0,Resource-Rich Facilities
+SHIVAJINAGAR- GHOLE ROAD,2,Dr. Ketkar Nursing Home,8,1,0,2,0,0,0,0,0,0,61,149,0,Resource-Rich Facilities
+KOTHRUD-BAVDHAN,2,Deshpande Eye Hospital & Laser Centre,37,1,0,2,0,0,0,0,0,0,33,118,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Aadhar Hospital,21,1,0,10,0,0,0,0,0,0,32,4,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Shree Ayurved & Panchkarma Hospital,34,1,0,15,0,0,0,0,0,0,51,531,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Healing Hands Clinic Pvt. Ltd.,8,1,0,15,0,0,0,0,0,0,13,222,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Motherhood Hospital ( Rhea Healthcare Pvt. Ltd.,36,1,0,32,0,0,0,0,0,0,51,379,0,Resource-Rich Facilities
+KONDHWA-YEVALEWADI,4,Jivandhara Multispeciality Hospital,8,1,0,9,0,0,0,0,0,0,32,246,0,Resource-Rich Facilities
+BIBEWADI,5,Jeevan sparsh Eye Hospital,27,1,0,5,0,0,0,0,0,0,6,241,0,Resource-Rich Facilities
+BHAVANI PETH,5,Shinde Nursing Home & Polyclinic,21,1,0,10,0,0,0,0,0,0,5,527,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Vatsalya  hospital,21,1,0,18,0,0,0,0,0,0,51,604,0,Resource-Rich Facilities
+AUNDH-BANER,2,"Dr. Agarwal""s Healthcare Ltd.",9,1,0,2,0,0,0,0,0,0,0,134,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Horizon Hospital,9,1,0,5,0,0,0,0,0,0,51,228,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Siver Birch MultiSpeciality Hospital pvt. Ltd.,21,1,0,48,0,0,0,0,0,0,62,559,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,City Care Hospital,21,1,0,15,0,0,0,0,0,0,51,102,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Nityashraddha  Life Care Hospital,9,1,0,20,0,0,0,0,0,0,13,405,0,Resource-Rich Facilities
+NAGAR ROAD- VADGOANSHERI,1,Jeevnjyot Nursing Home,9,1,0,10,0,0,0,0,0,0,51,242,0,Resource-Rich Facilities
+SINGHARD ROAD,3,Dr. Pathak Eye Clinic,28,1,0,2,0,0,0,0,0,0,62,161,0,Resource-Rich Facilities
+DHOLE-PATIL ROAD,1,Bliz fertility center ,9,1,0,3,0,0,0,0,0,0,13,73,0,Resource-Rich Facilities
+HADAPSAR-MUNDHWA,4,Shree Samarth Hospital,21,1,0,8,0,0,0,0,0,0,26,534,0,Resource-Rich Facilities
