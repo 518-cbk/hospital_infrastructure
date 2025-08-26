@@ -454,6 +454,11 @@ elif page == "📈 Patient Footfall Prediction":
                     encoded_class = 0
                 pharmacy_encoded = 1 if pharmacy_available == "Yes" else 0
                 ambulance_encoded = 1 if ambulance_available == "Yes" else 0
+
+                # Set ambulance_count to 0 if ambulance service is "No"
+                if ambulance_available == "No":
+                    ambulance_count = 0
+
                 # Features array
                 features = np.array([[
                     encoded_type,
