@@ -1,38 +1,38 @@
 WardName,ZoneNo.,FacilityName,Type(Hospital/NursingHome/Lab),Class:(Public/Private),PharmacyAvailable:Yes/No,NumberofBedsinfacilitytype,NumberofDoctors/Physicians,NumberofNurses,NumberofMidwivesProfessional,AverageMonthlyPatientFootfall,AmbulanceServiceAvailable,CountofAmbulance,WardNo.,FacilityNo.,Cluster,Cluster_Name,AnomalyScore,AnomalyReason
-Ambil Odha,5,"Late Matoshri Ramabai Ambedkar Maternity Home, AmbilOdha",16,0,1,10,2,4,1,4500,1,1,1,316,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-Aundh,2,"Aundh Kuti Maternity Home, Aundh",16,0,1,14,2,5,2,2500,1,1,3,48,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-Bopodi,2,"Late Draupadabai Murlidhar Khedekar Maternity Home, Bopodi",16,0,1,16,2,4,9,1900,1,1,12,307,2,Specialized Services,-1,High CountofAmbulance; High NumberofNurses
-Shivaji Nagar Station,2,"Dr. Dalvi, PMC Joint Project",16,0,1,30,4,7,9,2400,1,2,66,138,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-Hadapsar,4,"Late Anna Saheb Magar Maternity Home, Hadapsar",16,0,1,20,2,3,6,4500,1,1,27,297,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-Health Camp,2,"Dr. Homi J. Bhabha Maternity Home, Health Camp",16,0,1,16,2,6,6,4000,1,2,28,145,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-"Gujrath Colony, Kothrud",2,"Late Jayabai Sutar Maternity Home, Kothrud",16,0,1,10,4,7,6,5000,1,4,24,309,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-Mundhwa,4,"Late Sakharam Kundalik Kodre Maternity Home, Mundhwa",16,0,1,8,2,6,5,3500,1,1,50,326,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-Pashan Gaon,2,"Late Sahadev Eknath Nimhan Maternity Home, Pashan",16,0,1,16,2,3,5,1800,1,1,55,325,2,Specialized Services,-1,High CountofAmbulance; High NumberofNurses
-Bhawani Peth,5,Late Chandu Mama Sonawane Maternity Home,16,0,1,86,5,12,9,5500,1,2,9,303,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-Wanowrie,4,"Late Namedevrao Shivarkar Maternity Home, Wanorie",16,0,1,10,1,4,4,1900,1,1,77,321,2,Specialized Services,-1,High CountofAmbulance; High NumberofNurses
-Yerawada,1,"Bharatratna Rajiv Gandhi Hospital, Yerawada",16,0,1,180,4,18,10,8000,1,2,79,63,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-Guruwar Peth,5,"Late Savitribai Phule Maternity Home, Guruwarpeth",16,0,1,10,2,2,4,3500,1,1,25,327,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-Kondhwa,4,"Late Minatai Thakare Maternity Home, Kondhwa",16,0,1,10,2,6,0,2600,1,1,40,318,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-"Gadikhana, Shukruwar Peth",5,"Late Malti Kachi Maternity Home, Gadikhana",16,0,1,20,2,1,5,2500,1,2,19,314,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-Mitramandal,5,Rajmata Jijau Mitra Mandal (only IPD),16,0,1,20,2,3,3,50,1,1,48,466,2,Specialized Services,-1,High CountofAmbulance; High NumberofNurses
-Balaji Nagar,4,"Late Kashinath Aa. Dhankavde, Balajinagar",16,0,1,20,2,2,3,1200,1,1,7,312,2,Specialized Services,-1,High CountofAmbulance; High NumberofNurses
-"Maharashtra Housing Board, Yerawada",1,"Chatrpati Shivray Disp, Yerwada, Nagpur Chawl",16,0,1,10,1,2,4,2000,0,0,44,94,0,Resource-Rich Facilities,-1,High AverageMonthlyPatientFootfall; High NumberofNurses
-Somwar Peth,5,Kamla Nehru Hospital,14,0,1,450,10,64,23,18000,1,3,67,265,1,Basic Infrastructure,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-Pune Station,1,Dr. Naidu Infectious Disease Hospital,15,0,1,200,4,7,13,4000,1,3,56,155,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-Ganjpeth,5,"Late Balaji Rakhmaji Gaikwad Dispensary, Ganjpeth",6,0,1,0,1,0,1,2500,0,0,22,299,0,Resource-Rich Facilities,-1,High AverageMonthlyPatientFootfall
-Mitramandal,5,"Hindu Samrat SS Pramukh Balasaheb Thakare Disp, Parvati Darshan / old Lions Club Dispensary, Mitra Mandal",6,0,1,0,1,0,1,5000,0,0,48,226,0,Resource-Rich Facilities,-1,High AverageMonthlyPatientFootfall
-Vishrantwadi,0,"Siddharth Dispensary, Vishrantwadi",6,0,1,0,1,0,2,2900,0,0,72,552,0,Resource-Rich Facilities,-1,High AverageMonthlyPatientFootfall
-Sahakar Nagar,0,"Late Shivshankar Pote Dispensary, Sahakarnagar",6,0,1,0,2,2,1,10000,0,1,63,328,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
-"PMC Bhavan, Shivaji Nagar",0,"Late Jangalrao Kondiba Amrale Dispensary, Shivaji Nagar",6,0,1,0,1,0,1,2800,0,0,54,308,0,Resource-Rich Facilities,-1,High AverageMonthlyPatientFootfall
-Kalyani Nagar,0,"Late Damodarraoji Galande Patil Dispensary, Kalyani Nagar",6,0,1,0,1,0,2,2100,0,1,35,305,0,Resource-Rich Facilities,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance
-Kelewadi,0,"Late Sundarabai Ganpat Raut Dispensary, Kelewadi",6,0,1,0,1,1,1,900,0,0,38,329,0,Resource-Rich Facilities,-1,High NumberofNurses
-"Gadikhana, Shukruwar Peth",0,"Dr. Kotnis Health Centre, Gadikhana",6,0,1,0,4,1,1,2500,0,0,19,153,0,Resource-Rich Facilities,-1,High AverageMonthlyPatientFootfall; High NumberofNurses
-Kalas,0,"Kalas Dispensary, Jadhav Wasti - Kalas",6,0,1,0,1,0,3,3000,0,1,34,252,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance
-"Kedari Nagar, Wanowrie",0,"Chatrapati Shahu Maharaj Disp., Kedari Nagar, Wanawadi",6,0,1,0,1,0,1,700,0,1,37,93,0,Resource-Rich Facilities,-1,High CountofAmbulance
-Atul Nagar,0,"Late Bartakke Disp., Atul Nagar",6,0,1,0,1,0,1,3000,0,1,2,301,0,Resource-Rich Facilities,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance
-Upper Bibwewadi,0,"Yug Purush Raja Shiv Chatrapati, Bibwewadi (Upper) Disp.",6,0,1,0,1,0,1,2500,0,0,69,627,0,Resource-Rich Facilities,-1,High AverageMonthlyPatientFootfall
-Dhankawadi,0,Late Vilasrao Tambe Disp Dhankawadi,6,0,1,0,2,1,1,6800,0,0,15,331,0,Resource-Rich Facilities,-1,High AverageMonthlyPatientFootfall; High NumberofNurses
-Sukh Sagar Nagar,0,"Ward No.76, Katraj Davakhana",6,0,1,0,1,0,1,2800,0,0,68,618,0,Resource-Rich Facilities,-1,High AverageMonthlyPatientFootfall
-Wadgaonsheri,0,"Late Meena Tai Thakare Polyclinic, Wadgaon Sheri Disp. ",6,0,1,0,1,0,1,3600,0,1,76,317,0,Resource-Rich Facilities,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance
-Mitha Nagar,0,"Hazrat Khwaja Moinuddin Khisti Rahe, Khwaja Garib Nawaz Disp., Mithanagar",6,0,1,0,1,0,1,3900,0,0,47,221,0,Resource-Rich Facilities,-1,High AverageMonthlyPatientFootfall
-Katraj,4,"PMC Firta Dispensary, Ward No.40 Katraj, Vasant More Firta Dispensary",5,0,1,0,1,0,1,1200,1,1,36,425,0,Resource-Rich Facilities,-1,High CountofAmbulance
+Ambil Odha,5,"Late Matoshri Ramabai Ambedkar Maternity Home, AmbilOdha",2,0,1,10,2,4,1,4500,1,1,1,316,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+Aundh,2,"Aundh Kuti Maternity Home, Aundh",2,0,1,14,2,5,2,2500,1,1,3,48,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+Bopodi,2,"Late Draupadabai Murlidhar Khedekar Maternity Home, Bopodi",2,0,1,16,2,4,9,1900,1,1,12,307,2,Specialized Services,-1,High CountofAmbulance; High NumberofNurses
+Shivaji Nagar Station,2,"Dr. Dalvi, PMC Joint Project",2,0,1,30,4,7,9,2400,1,2,66,138,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+Hadapsar,4,"Late Anna Saheb Magar Maternity Home, Hadapsar",2,0,1,20,2,3,6,4500,1,1,27,297,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+Health Camp,2,"Dr. Homi J. Bhabha Maternity Home, Health Camp",2,0,1,16,2,6,6,4000,1,2,28,145,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+"Gujrath Colony, Kothrud",2,"Late Jayabai Sutar Maternity Home, Kothrud",2,0,1,10,4,7,6,5000,1,4,24,309,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+Mundhwa,4,"Late Sakharam Kundalik Kodre Maternity Home, Mundhwa",2,0,1,8,2,6,5,3500,1,1,50,326,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+Pashan Gaon,2,"Late Sahadev Eknath Nimhan Maternity Home, Pashan",2,0,1,16,2,3,5,1800,1,1,55,325,2,Specialized Services,-1,High CountofAmbulance; High NumberofNurses
+Bhawani Peth,5,Late Chandu Mama Sonawane Maternity Home,2,0,1,86,5,12,9,5500,1,2,9,303,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+Wanowrie,4,"Late Namedevrao Shivarkar Maternity Home, Wanorie",2,0,1,10,1,4,4,1900,1,1,77,321,2,Specialized Services,-1,High CountofAmbulance; High NumberofNurses
+Yerawada,1,"Bharatratna Rajiv Gandhi Hospital, Yerawada",2,0,1,180,4,18,10,8000,1,2,79,63,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+Guruwar Peth,5,"Late Savitribai Phule Maternity Home, Guruwarpeth",2,0,1,10,2,2,4,3500,1,1,25,327,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+Kondhwa,4,"Late Minatai Thakare Maternity Home, Kondhwa",2,0,1,10,2,6,0,2600,1,1,40,318,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+"Gadikhana, Shukruwar Peth",5,"Late Malti Kachi Maternity Home, Gadikhana",2,0,1,20,2,1,5,2500,1,2,19,314,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+Mitramandal,5,Rajmata Jijau Mitra Mandal (only IPD),2,0,1,20,2,3,3,50,1,1,48,466,2,Specialized Services,-1,High CountofAmbulance; High NumberofNurses
+Balaji Nagar,4,"Late Kashinath Aa. Dhankavde, Balajinagar",2,0,1,20,2,2,3,1200,1,1,7,312,2,Specialized Services,-1,High CountofAmbulance; High NumberofNurses
+"Maharashtra Housing Board, Yerawada",1,"Chatrpati Shivray Disp, Yerwada, Nagpur Chawl",2,0,1,10,1,2,4,2000,0,0,44,94,0,Development Needs,-1,High AverageMonthlyPatientFootfall; High NumberofNurses
+Somwar Peth,5,Kamla Nehru Hospital,2,0,1,450,10,64,23,18000,1,3,67,265,1,Basic Infrastructure,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+Pune Station,1,Dr. Naidu Infectious Disease Hospital,2,0,1,200,4,7,13,4000,1,3,56,155,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+Ganjpeth,5,"Late Balaji Rakhmaji Gaikwad Dispensary, Ganjpeth",1,0,1,0,1,0,1,2500,0,0,22,299,0,Development Needs,-1,High AverageMonthlyPatientFootfall
+Mitramandal,5,"Hindu Samrat SS Pramukh Balasaheb Thakare Disp, Parvati Darshan / old Lions Club Dispensary, Mitra Mandal",1,0,1,0,1,0,1,5000,0,0,48,226,0,Development Needs,-1,High AverageMonthlyPatientFootfall
+Vishrantwadi,0,"Siddharth Dispensary, Vishrantwadi",1,0,1,0,1,0,2,2900,0,0,72,552,0,Development Needs,-1,High AverageMonthlyPatientFootfall
+Sahakar Nagar,0,"Late Shivshankar Pote Dispensary, Sahakarnagar",1,0,1,0,2,2,1,10000,0,1,63,328,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance; High NumberofNurses
+"PMC Bhavan, Shivaji Nagar",0,"Late Jangalrao Kondiba Amrale Dispensary, Shivaji Nagar",1,0,1,0,1,0,1,2800,0,0,54,308,0,Development Needs,-1,High AverageMonthlyPatientFootfall
+Kalyani Nagar,0,"Late Damodarraoji Galande Patil Dispensary, Kalyani Nagar",1,0,1,0,1,0,2,2100,0,1,35,305,0,Development Needs,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance
+Kelewadi,0,"Late Sundarabai Ganpat Raut Dispensary, Kelewadi",1,0,1,0,1,1,1,900,0,0,38,329,0,Development Needs,-1,High NumberofNurses
+"Gadikhana, Shukruwar Peth",0,"Dr. Kotnis Health Centre, Gadikhana",1,0,1,0,4,1,1,2500,0,0,19,153,0,Development Needs,-1,High AverageMonthlyPatientFootfall; High NumberofNurses
+Kalas,0,"Kalas Dispensary, Jadhav Wasti - Kalas",1,0,1,0,1,0,3,3000,0,1,34,252,2,Specialized Services,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance
+"Kedari Nagar, Wanowrie",0,"Chatrapati Shahu Maharaj Disp., Kedari Nagar, Wanawadi",1,0,1,0,1,0,1,700,0,1,37,93,0,Development Needs,-1,High CountofAmbulance
+Atul Nagar,0,"Late Bartakke Disp., Atul Nagar",1,0,1,0,1,0,1,3000,0,1,2,301,0,Development Needs,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance
+Upper Bibwewadi,0,"Yug Purush Raja Shiv Chatrapati, Bibwewadi (Upper) Disp.",1,0,1,0,1,0,1,2500,0,0,69,627,0,Development Needs,-1,High AverageMonthlyPatientFootfall
+Dhankawadi,0,Late Vilasrao Tambe Disp Dhankawadi,1,0,1,0,2,1,1,6800,0,0,15,331,0,Development Needs,-1,High AverageMonthlyPatientFootfall; High NumberofNurses
+Sukh Sagar Nagar,0,"Ward No.76, Katraj Davakhana",1,0,1,0,1,0,1,2800,0,0,68,618,0,Development Needs,-1,High AverageMonthlyPatientFootfall
+Wadgaonsheri,0,"Late Meena Tai Thakare Polyclinic, Wadgaon Sheri Disp. ",1,0,1,0,1,0,1,3600,0,1,76,317,0,Development Needs,-1,High AverageMonthlyPatientFootfall; High CountofAmbulance
+Mitha Nagar,0,"Hazrat Khwaja Moinuddin Khisti Rahe, Khwaja Garib Nawaz Disp., Mithanagar",1,0,1,0,1,0,1,3900,0,0,47,221,0,Development Needs,-1,High AverageMonthlyPatientFootfall
+Katraj,4,"PMC Firta Dispensary, Ward No.40 Katraj, Vasant More Firta Dispensary",1,0,1,0,1,0,1,1200,1,1,36,425,0,Development Needs,-1,High CountofAmbulance

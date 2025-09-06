@@ -1,18 +1,12 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import joblib
 import plotly.express as px
 import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-from sklearn.preprocessing import StandardScaler, LabelEncoder
-from sklearn.metrics import mean_squared_error, accuracy_score
+from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
-from sklearn.ensemble import IsolationForest
+import joblib
 
-# Set page configuration
 st.set_page_config(
     page_title="Healthcare Facility Analytics",
     page_icon="🏥",
@@ -20,10 +14,9 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for better styling
+# Custom CSS for styling
 st.markdown("""
 <style>
-    /* Main theme colors */
     :root {
         --primary-color: #2E86AB;
         --secondary-color: #A23B72;
@@ -34,20 +27,14 @@ st.markdown("""
         --background-color: #F8F9FA;
         --text-color: #2C3E50;
     }
-    
-    /* Sidebar styling */
     .css-1d391kg {
         background: linear-gradient(180deg, #2E86AB 0%, #1C5A7A 100%);
     }
-    
-    /* Main content area */
     .main .block-container {
         padding-top: 2rem;
         padding-bottom: 2rem;
         max-width: 1200px;
     }
-    
-    /* Custom metric cards */
     .metric-card {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         padding: 1.5rem;
@@ -58,11 +45,9 @@ st.markdown("""
         margin-bottom: 1rem;
         transition: transform 0.3s ease;
     }
-    
     .metric-card:hover {
         transform: translateY(-5px);
     }
-    
     .metric-value {
         font-size: 2.5rem;
         font-weight: bold;
@@ -72,8 +57,6 @@ st.markdown("""
         font-size: 1rem;
         opacity: 0.9;
     }
-    
-    /* Header styling */
     .main-header {
         text-align: center;
         padding: 2rem 0;
@@ -83,8 +66,6 @@ st.markdown("""
         margin-bottom: 2rem;
         box-shadow: 0 8px 32px rgba(0,0,0,0.1);
     }
-    
-    /* Card styling */
     .info-card {
         background: white;
         padding: 1.5rem;
@@ -94,12 +75,9 @@ st.markdown("""
         border-left: 4px solid var(--primary-color);
         transition: box-shadow 0.3s ease;
     }
-    
     .info-card:hover {
         box-shadow: 0 8px 32px rgba(0,0,0,0.15);
     }
-    
-    /* Button styling */
     .stButton > button {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         color: white;
@@ -110,44 +88,34 @@ st.markdown("""
         transition: all 0.3s ease;
         box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
-    
     .stButton > button:hover {
         transform: translateY(-2px);
         box-shadow: 0 6px 20px rgba(0,0,0,0.3);
     }
-    
-    /* Input field styling */
     .stSelectbox > div > div {
         border-radius: 10px;
         border: 2px solid #E0E0E0;
         transition: border-color 0.3s ease;
     }
-    
     .stSelectbox > div > div:focus-within {
         border-color: var(--primary-color);
         box-shadow: 0 0 0 2px rgba(46, 134, 171, 0.2);
     }
-    
-    /* Success/Error message styling */
     .stSuccess {
         background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
         color: white;
         border-radius: 10px;
         padding: 1rem;
     }
-    
     .stError {
         background: linear-gradient(135deg, #F44336 0%, #d32f2f 100%);
         color: white;
         border-radius: 10px;
         padding: 1rem;
     }
-    
-    /* Tab styling */
     .stTabs [data-baseweb="tab-list"] {
         gap: 2px;
     }
-    
     .stTabs [data-baseweb="tab"] {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         color: white;
@@ -156,20 +124,15 @@ st.markdown("""
         font-weight: 600;
         border: none;
     }
-    
     .stTabs [aria-selected="true"] {
         background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
     }
-    
-    /* Sidebar navigation styling */
     .css-1lcbmhc .css-1outpf7 {
         background: rgba(255,255,255,0.1);
         border-radius: 10px;
         margin-bottom: 1rem;
         backdrop-filter: blur(10px);
     }
-    
-    /* Data frame styling */
     .stDataFrame {
         border-radius: 15px;
         overflow: hidden;
@@ -178,12 +141,11 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Load data and models functions
 @st.cache_data
 def load_data():
     try:
         df = pd.read_csv("PMC Hospital Infrastructure.csv")
-        # Apply all the preprocessing steps from your notebook
+        # Convert specific columns to numeric
         columns_to_convert = [
             'Number of Beds in Emergency Wards ',
             'Number of Doctors / Physicians',
@@ -195,22 +157,71 @@ def load_data():
         for col in columns_to_convert:
             if col in df.columns:
                 df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(int)
+        # Clean column names
         df.columns = df.columns.str.strip().str.replace(' ', '')
-        columns_to_drop = ['CityName', 'ZoneName', 'WardNo.', 'NumberofBedsinEmergencyWards']
-        df = df.drop(columns=[col for col in columns_to_drop if col in df.columns])
+        # Drop unnecessary columns
+        for col in ['CityName', 'ZoneName', 'WardNo.', 'NumberofBedsinEmergencyWards']:
+            if col in df.columns:
+                df = df.drop(columns=col)
         df = df.dropna()
         df = df.drop_duplicates()
-        # Convert Yes/No columns
-        df['PharmacyAvailable:Yes/No'] = df['PharmacyAvailable:Yes/No'].str.strip().str.lower()
-        df['PharmacyAvailable:Yes/No'] = df['PharmacyAvailable:Yes/No'].replace('n.a.', 'no')
-        df['AmbulanceServiceAvailable'] = df['AmbulanceServiceAvailable'].str.strip().str.lower()
-        df['AmbulanceServiceAvailable'] = df['AmbulanceServiceAvailable'].replace('n.a.', 'no')
-        # Convert to binary
-        df['PharmacyAvailable:Yes/No'] = df['PharmacyAvailable:Yes/No'].map({'yes': 1, 'no': 0})
-        df['AmbulanceServiceAvailable'] = df['AmbulanceServiceAvailable'].map({'yes': 1, 'no': 0})
+
+        # Standardize Yes/No columns
+        for col in ['PharmacyAvailable:Yes/No', 'AmbulanceServiceAvailable']:
+            if col in df.columns:
+                df[col] = df[col].astype(str).str.strip().str.lower()
+                df[col] = df[col].replace('n.a.', 'no')
+                df[col] = df[col].map({'yes':1, 'no':0})
+                
+        # Facility type classification
+        type_mapping = {
+            'lab': 'Laboratory',
+            'laboratory': 'Laboratory',
+            'nursinghome': 'Nursing Home',
+            'nursing home': 'Nursing Home',
+            'hospital': 'General Hospital',
+            'clinic': 'Clinic / Dispensary',
+            'dispensary': 'Clinic / Dispensary'
+        }
+        
+        specialty_keywords = ['ent', 'ophthalmology', 'cardiology', 'urology', 'orthopedics']
+        ayurvedic_keywords = ['ayurvedic', 'homeopathic', 'ayurved']
+        surgical_keywords = ['surgical']
+        maternity_keywords = ['maternity']
+        elderly_keywords = ['elderly', 'senior']
+        
+        def classify_facility(row):
+            type_lower = row['Type(Hospital/NursingHome/Lab)'].lower()
+            for key, category in type_mapping.items():
+                if key in type_lower:
+                    return category
+            if any(keyword in type_lower for keyword in maternity_keywords):
+                return 'Hospital & Maternity'
+            elif any(keyword in type_lower for keyword in elderly_keywords):
+                return 'Nursing Home'
+            elif any(keyword in type_lower for keyword in specialty_keywords):
+                return 'Specialty Clinic'
+            elif any(keyword in type_lower for keyword in ayurvedic_keywords):
+                return 'Ayurvedic / Homeopathic'
+            elif any(keyword in type_lower for keyword in surgical_keywords):
+                return 'Surgical / Procedural Facility'
+            else:
+                if 'surgical' in type_lower:
+                    return 'Surgical / Procedural Facility'
+                elif 'clinic' in type_lower or 'dispensary' in type_lower:
+                    return 'Clinic / Dispensary'
+                elif 'lab' in type_lower:
+                    return 'Laboratory'
+                elif 'nursing' in type_lower or 'elderly' in type_lower or 'senior' in type_lower:
+                    return 'Nursing Home'
+                elif 'hospital' in type_lower:
+                    return 'General Hospital'
+                else:
+                    return 'Other'
+        df['Type(Hospital/NursingHome/Lab)'] = df.apply(classify_facility, axis=1)
         return df
     except Exception as e:
-        st.error(f"Error loading data: {str(e)}")
+        st.error(f"Error loading data: {e}")
         return pd.DataFrame()
 
 @st.cache_resource
@@ -220,22 +231,24 @@ def load_models():
         models['regressor'] = joblib.load('best_patient_footfall_regressor.pkl')
         models['regressor_scaler'] = joblib.load('scaler_patient_footfall.pkl')
     except:
-        st.warning("⚠️ Regression models not found")
+        st.warning("Regression model not found.")
     try:
         models['class_public_private'] = joblib.load('best_public_private_clf.pkl')
         models['class_scaler'] = joblib.load('scaler_public_private.pkl')
     except:
-        st.warning("⚠️ Classification models not found")
+        st.warning("Public/Private classifier not found.")
     try:
         models['facility_type'] = joblib.load('best_facility_type_clf.pkl')
         models['facility_scaler'] = joblib.load('scaler_facility_type.pkl')
     except:
-        st.warning("⚠️ Facility type model not found")
+        st.warning("Facility Type classifier not found.")
     try:
         models['le_type'] = joblib.load('le_type.pkl')
         models['le_class'] = joblib.load('le_class.pkl')
+        models['le_ward'] = joblib.load('le_ward.pkl')
+        models['le_facility'] = joblib.load('le_facility.pkl')
     except:
-        st.warning("⚠️ Label encoders not found")
+        pass
     return models
 
 def perform_clustering(df):
@@ -248,44 +261,55 @@ def perform_clustering(df):
     ]
     features_clust = [f for f in features_clust if f in df.columns]
     if not features_clust:
-        st.error("No clustering features found in the dataset")
         return df, None, None
+
+    integer_features = [
+        'NumberofBedsinfacilitytype',
+        'NumberofDoctors/Physicians',
+        'NumberofNurses',
+        'NumberofMidwivesProfessional',
+        'CountofAmbulance'
+    ]
+    for feature in integer_features:
+        if feature in df.columns:
+            df[feature] = df[feature].round().astype(int)
+
     X_clust = df[features_clust]
     scaler_clust = StandardScaler()
     X_scaled = scaler_clust.fit_transform(X_clust)
-    kmeans = KMeans(n_clusters=4, random_state=42)
-    cluster_labels = kmeans.fit_predict(X_scaled)
-    df['Cluster'] = cluster_labels
+
+    kmeans = KMeans(n_clusters=3, random_state=42)
+    labels = kmeans.fit_predict(X_scaled)
+    df['Cluster'] = labels
+    cluster_names = {
+        0: 'Development Needs',
+        1: 'Basic Infrastructure',
+        2: 'Specialized Services'
+    }
+    df['Cluster_Name'] = df['Cluster'].map(cluster_names)
     return df, kmeans, scaler_clust
 
-# Load data and models
+# Load data and models once
 df = load_data()
 models = load_models()
-
 if not df.empty:
     df, kmeans_model, clust_scaler = perform_clustering(df)
 
-# Enhanced sidebar with icons
+sidebar_pages = [
+    "📊 Overview",
+    "📈 Patient Footfall Prediction",
+    "🏷️ Facility Classification",
+    "🎯 Cluster Analysis",
+    "⚠️ Anomaly Detection"
+]
 st.sidebar.markdown("# 🏥 Healthcare Analytics")
 st.sidebar.markdown("---")
-
-page = st.sidebar.radio(
-    "🧭 Navigate",
-    [
-        "📊 Overview", 
-        "📈 Patient Footfall Prediction", 
-        "🏷️ Facility Classification",
-        "🎯 Cluster Analysis",
-        "⚠️ Anomaly Detection"
-    ]
-)
-
+page = st.sidebar.radio("🧭 Navigate", sidebar_pages)
 st.sidebar.markdown("---")
 st.sidebar.info(
     "💡 **Tip**: This dashboard uses machine learning to analyze healthcare infrastructure data and provide insights for better decision making."
 )
 
-# Helper function for metric cards
 def create_metric_card(value, label, col):
     with col:
         st.markdown(f"""
@@ -295,7 +319,7 @@ def create_metric_card(value, label, col):
         </div>
         """, unsafe_allow_html=True)
 
-# Overview page
+# Start rendering pages
 if page == "📊 Overview":
     st.markdown("""
     <div class="main-header">
@@ -306,39 +330,30 @@ if page == "📊 Overview":
     if df.empty:
         st.error("❌ No data available. Please ensure the CSV file is in the correct location.")
         st.stop()
-    # Metrics row
     col1, col2, col3, col4 = st.columns(4)
     create_metric_card(len(df), "Total Facilities", col1)
-    create_metric_card(
-        len(df[df['Type(Hospital/NursingHome/Lab)'] == 'Hospital']) if 'Type(Hospital/NursingHome/Lab)' in df.columns else 0,
-        "Hospitals", 
-        col2
-    )
-    create_metric_card(
-        len(df[df['Class:(Public/Private)'] == 'Public']) if 'Class:(Public/Private)' in df.columns else 0,
-        "Public Facilities", 
-        col3
-    )
-    create_metric_card(
-        f"{df['AverageMonthlyPatientFootfall'].mean():.0f}" if 'AverageMonthlyPatientFootfall' in df.columns else "N/A",
-        "Avg Monthly Footfall", 
-        col4
-    )
-    # Data overview
+    hosp_count = len(df[df['Type(Hospital/NursingHome/Lab)'].str.contains('Hospital', case=False)]) if 'Type(Hospital/NursingHome/Lab)' in df.columns else 0
+    create_metric_card(hosp_count, "Hospitals", col2)
+    pub_count = len(df[df['Class:(Public/Private)'] == 'Public']) if 'Class:(Public/Private)' in df.columns else 0
+    create_metric_card(pub_count, "Public Facilities", col3)
+    if 'AverageMonthlyPatientFootfall' in df.columns:
+        avg_footfall = df['AverageMonthlyPatientFootfall'].mean()
+        create_metric_card(f"{avg_footfall:.0f}", "Avg Monthly Footfall", col4)
+    else:
+        create_metric_card("N/A", "Avg Monthly Footfall", col4)
     with st.container():
         st.markdown('<div class="info-card">', unsafe_allow_html=True)
         st.subheader("📋 Data Overview")
         st.dataframe(df.head(), use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
-    # Visualizations
-    col1, col2 = st.columns(2)
-    with col1:
+    colA, colB = st.columns(2)
+    with colA:
         st.markdown('<div class="info-card">', unsafe_allow_html=True)
         st.subheader("🏢 Facility Type Distribution")
         if 'Type(Hospital/NursingHome/Lab)' in df.columns:
             type_counts = df['Type(Hospital/NursingHome/Lab)'].value_counts()
             fig = px.pie(
-                values=type_counts.values, 
+                values=type_counts.values,
                 names=type_counts.index,
                 color_discrete_sequence=px.colors.qualitative.Set3,
                 hole=0.4
@@ -346,19 +361,18 @@ if page == "📊 Overview":
             fig.update_traces(
                 textinfo='percent+label',
                 textposition='inside',
-                textfont=dict(color='white')  # Readable labels
+                textfont=dict(color='white')
             )
             fig.update_layout(
                 showlegend=True,
                 height=400,
-                font=dict(size=12, color='white'),  # Set overall font color
                 margin=dict(l=20, r=20, t=20, b=20),
                 paper_bgcolor='rgba(0,0,0,0)',
                 plot_bgcolor='rgba(0,0,0,0)'
             )
             st.plotly_chart(fig, use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
-    with col2:
+    with colB:
         st.markdown('<div class="info-card">', unsafe_allow_html=True)
         st.subheader("🏛️ Public vs Private Distribution")
         if 'Class:(Public/Private)' in df.columns:
@@ -369,12 +383,10 @@ if page == "📊 Overview":
                 color=class_counts.index,
                 color_discrete_sequence=['#667eea', '#764ba2']
             )
-            # Remove the '663' label above the bars by setting text to None
             fig.update_traces(
-                text=None,  # No labels above bars
+                text=None,
                 textposition='outside'
             )
-            # Layout adjustments
             fig.update_layout(
                 showlegend=False,
                 height=400,
@@ -386,7 +398,6 @@ if page == "📊 Overview":
             )
             st.plotly_chart(fig, use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
-    # Correlation heatmap
     st.markdown('<div class="info-card">', unsafe_allow_html=True)
     st.subheader("🔥 Feature Correlation Heatmap")
     numeric_df = df.select_dtypes(include=[np.number])
@@ -406,7 +417,6 @@ if page == "📊 Overview":
         st.plotly_chart(fig, use_container_width=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
-# Patient Footfall Prediction page
 elif page == "📈 Patient Footfall Prediction":
     st.markdown("""
     <div class="main-header">
@@ -414,21 +424,25 @@ elif page == "📈 Patient Footfall Prediction":
         <p>Predict average monthly patient footfall using facility characteristics</p>
     </div>
     """, unsafe_allow_html=True)
+    models = load_models()
+    df = load_data()
     if 'regressor' not in models:
-        st.error("❌ Regression model not available. Please ensure the model files are in the correct location.")
+        st.error("❌ Regression model not available. Please ensure the model files are in place.")
     else:
         st.markdown('<div class="info-card">', unsafe_allow_html=True)
         col1, col2 = st.columns(2)
         with col1:
             st.subheader("🏢 Facility Information")
-            facility_type = st.selectbox(
-                "🏥 Facility Type",
-                options=models['le_type'].classes_ if 'le_type' in models else ['Hospital', 'NursingHome', 'Lab']
-            )
-            facility_class = st.selectbox(
-                "🏛️ Facility Class",
-                options=models['le_class'].classes_ if 'le_class' in models else ['Public', 'Private']
-            )
+            if 'le_type' in models:
+                facility_options = list(models['le_type'].classes_)
+            else:
+                facility_options = sorted(df['Type(Hospital/NursingHome/Lab)'].unique()) if 'Type(Hospital/NursingHome/Lab)' in df.columns else ['General Hospital', 'Nursing Home', 'Laboratory']
+            facility_type = st.selectbox("🏥 Facility Type", options=facility_options)
+            if 'le_class' in models:
+                class_options = list(models['le_class'].classes_)
+            else:
+                class_options = sorted(df['Class:(Public/Private)'].unique()) if 'Class:(Public/Private)' in df.columns else ['Public', 'Private']
+            facility_class = st.selectbox("🏛️ Facility Class", options=class_options)
             pharmacy_available = st.selectbox("💊 Pharmacy Available", options=["Yes", "No"])
             num_beds = st.number_input("🛏️ Number of Beds", min_value=0, value=50, step=1)
         with col2:
@@ -437,29 +451,32 @@ elif page == "📈 Patient Footfall Prediction":
             num_nurses = st.number_input("👩‍⚕️ Number of Nurses", min_value=0, value=15, step=1)
             num_midwives = st.number_input("🤱 Number of Midwives", min_value=0, value=5, step=1)
             ambulance_available = st.selectbox("🚑 Ambulance Service Available", options=["Yes", "No"])
-            ambulance_count = st.number_input("🚑 Ambulance Count", min_value=0, value=2, step=1)
+            if ambulance_available == "Yes":
+                ambulance_count = st.number_input("🚑 Ambulance Count", min_value=1, value=2, step=1, help="Must be at least 1 if ambulance service is available")
+            else:
+                ambulance_count = 0
+                st.info("🚑 Ambulance count set to 0 since service is not available.")
         st.markdown('</div>', unsafe_allow_html=True)
-        # Prediction button centered
-        col1, col2, col3 = st.columns([1, 2, 1])
-        with col2:
+        colA, colB, colC = st.columns([1, 2, 1])
+        with colB:
             if st.button("🔮 Predict Patient Footfall", use_container_width=True):
-                # Encode categorical inputs
+                if ambulance_available == "Yes" and ambulance_count < 1:
+                    st.error("❌ Ambulance count must be at least 1 when ambulance service is available")
+                    st.stop()
+                elif ambulance_available == "No" and ambulance_count != 0:
+                    st.error("❌ Ambulance count must be 0 when ambulance service is not available")
+                    st.stop()
                 if 'le_type' in models:
                     encoded_type = models['le_type'].transform([facility_type])[0]
                 else:
-                    encoded_type = 0
+                    type_mapping = {type_name: i for i, type_name in enumerate(facility_options)}
+                    encoded_type = type_mapping.get(facility_type, 0)
                 if 'le_class' in models:
                     encoded_class = models['le_class'].transform([facility_class])[0]
                 else:
-                    encoded_class = 0
+                    encoded_class = 1 if facility_class == "Public" else 0
                 pharmacy_encoded = 1 if pharmacy_available == "Yes" else 0
                 ambulance_encoded = 1 if ambulance_available == "Yes" else 0
-
-                # Set ambulance_count to 0 if ambulance service is "No"
-                if ambulance_available == "No":
-                    ambulance_count = 0
-
-                # Features array
                 features = np.array([[
                     encoded_type,
                     encoded_class,
@@ -471,31 +488,26 @@ elif page == "📈 Patient Footfall Prediction":
                     ambulance_encoded,
                     ambulance_count
                 ]])
-                # Scale features
-                scaled_features = models['regressor_scaler'].transform(features)
-                # Predict
+                scaled_features = models['regressor'].transform(features)
                 prediction = models['regressor'].predict(scaled_features)[0]
-                # Show result
                 st.success(f"🎯 **Predicted Average Monthly Patient Footfall: {int(prediction)}**")
-                # Gauge chart
                 fig = go.Figure(go.Indicator(
-                    mode = "gauge+number+delta",
-                    value = prediction,
-                    domain = {'x': [0, 1], 'y': [0, 1]},
-                    title = {'text': "Predicted Patient Footfall"},
-                    delta = {'reference': df['AverageMonthlyPatientFootfall'].mean() if 'AverageMonthlyPatientFootfall' in df.columns else prediction},
-                    gauge = {'axis': {'range': [0, max(prediction * 1.5, 1)]},
-                             'bar': {'color': "darkblue"},
-                             'steps' : [
-                                 {'range': [0, prediction * 0.5], 'color': "lightgray"},
-                                 {'range': [prediction * 0.5, prediction], 'color': "gray"}
-                             ],
-                             'threshold' : {'line': {'color': "red", 'width': 4}, 'thickness': 0.75, 'value': prediction * 1.2}}
+                    mode="gauge+number+delta",
+                    value=prediction,
+                    domain={'x': [0, 1], 'y': [0, 1]},
+                    title={'text': "Predicted Patient Footfall"},
+                    delta={'reference': df['AverageMonthlyPatientFootfall'].mean() if 'AverageMonthlyPatientFootfall' in df.columns else prediction},
+                    gauge={'axis': {'range': [0, max(prediction * 1.5, 1)]},
+                           'bar': {'color': "darkblue"},
+                           'steps': [
+                               {'range': [0, prediction * 0.5], 'color': "lightgray"},
+                               {'range': [prediction * 0.5, prediction], 'color': "gray"}
+                           ],
+                           'threshold': {'line': {'color': "red", 'width': 4}, 'thickness': 0.75, 'value': prediction * 1.2}}
                 ))
                 fig.update_layout(height=400)
                 st.plotly_chart(fig, use_container_width=True)
 
-# Facility Classification page
 elif page == "🏷️ Facility Classification":
     st.markdown("""
     <div class="main-header">
@@ -507,16 +519,18 @@ elif page == "🏷️ Facility Classification":
     with tab1:
         st.markdown('<div class="info-card">', unsafe_allow_html=True)
         st.header("🏛️ Public/Private Classification")
+        models = load_models()
+        df = load_data()
         if 'class_public_private' not in models:
             st.error("❌ Public/Private classification model not available.")
         else:
             col1, col2 = st.columns(2)
             with col1:
-                pp_facility_type = st.selectbox(
-                    "🏥 Facility Type",
-                    options=models['le_type'].classes_ if 'le_type' in models else ['Hospital', 'NursingHome', 'Lab'],
-                    key="pp_type"
-                )
+                if 'le_type' in models:
+                    pp_facility_options = list(models['le_type'].classes_)
+                else:
+                    pp_facility_options = sorted(df['Type(Hospital/NursingHome/Lab)'].unique()) if 'Type(Hospital/NursingHome/Lab)' in df.columns else ['General Hospital', 'Nursing Home', 'Laboratory']
+                pp_facility_type = st.selectbox("🏥 Facility Type", options=pp_facility_options, key="pp_type")
                 pp_pharmacy = st.selectbox("💊 Pharmacy Available", options=["Yes", "No"], key="pp_pharmacy")
                 pp_beds = st.number_input("🛏️ Number of Beds", min_value=0, value=50, key="pp_beds")
                 pp_doctors = st.number_input("👨‍⚕️ Number of Doctors", min_value=0, value=10, key="pp_doctors")
@@ -524,16 +538,25 @@ elif page == "🏷️ Facility Classification":
                 pp_nurses = st.number_input("👩‍⚕️ Number of Nurses", min_value=0, value=15, key="pp_nurses")
                 pp_midwives = st.number_input("🤱 Number of Midwives", min_value=0, value=5, key="pp_midwives")
                 pp_ambulance = st.selectbox("🚑 Ambulance Service Available", options=["Yes", "No"], key="pp_ambulance")
-                pp_ambulance_count = st.number_input("🚑 Ambulance Count", min_value=0, value=2, key="pp_count")
+                if pp_ambulance == "Yes":
+                    pp_ambulance_count = st.number_input("🚑 Ambulance Count", min_value=1, value=2, step=1, key="pp_count", help="Must be at least 1 if ambulance service is available")
+                else:
+                    pp_ambulance_count = 0
+                    st.info("🚑 Ambulance count set to 0 since service is not available.")
             if st.button("🔍 Classify Public/Private", key="classify_pp"):
-                # Encode inputs
+                if pp_ambulance == "Yes" and pp_ambulance_count < 1:
+                    st.error("❌ Ambulance count must be at least 1 when ambulance service is available")
+                    st.stop()
+                elif pp_ambulance == "No" and pp_ambulance_count != 0:
+                    st.error("❌ Ambulance count must be 0 when ambulance service is not available")
+                    st.stop()
                 if 'le_type' in models:
                     pp_encoded_type = models['le_type'].transform([pp_facility_type])[0]
                 else:
-                    pp_encoded_type = 0
+                    type_mapping = {type_name: i for i, type_name in enumerate(pp_facility_options)}
+                    pp_encoded_type = type_mapping.get(pp_facility_type, 0)
                 pp_pharmacy_encoded = 1 if pp_pharmacy == "Yes" else 0
                 pp_ambulance_encoded = 1 if pp_ambulance == "Yes" else 0
-                # Features array
                 pp_features = np.array([[
                     pp_encoded_type,
                     pp_pharmacy_encoded,
@@ -544,11 +567,8 @@ elif page == "🏷️ Facility Classification":
                     pp_ambulance_encoded,
                     pp_ambulance_count
                 ]])
-                # Scale features
                 pp_scaled_features = models['class_scaler'].transform(pp_features)
-                # Predict
                 pp_prediction = models['class_public_private'].predict(pp_scaled_features)[0]
-                # Map prediction
                 if 'le_class' in models:
                     pp_class = models['le_class'].inverse_transform([pp_prediction])[0]
                 else:
@@ -559,6 +579,8 @@ elif page == "🏷️ Facility Classification":
     with tab2:
         st.markdown('<div class="info-card">', unsafe_allow_html=True)
         st.header("🏥 Facility Type Classification")
+        models = load_models()
+        df = load_data()
         if 'facility_type' not in models:
             st.error("❌ Facility type classification model not available.")
         else:
@@ -571,8 +593,18 @@ elif page == "🏷️ Facility Classification":
                 ft_nurses = st.number_input("👩‍⚕️ Number of Nurses", min_value=0, value=15, key="ft_nurses")
                 ft_midwives = st.number_input("🤱 Number of Midwives", min_value=0, value=5, key="ft_midwives")
                 ft_ambulance = st.selectbox("🚑 Ambulance Service Available", options=["Yes", "No"], key="ft_ambulance")
-                ft_ambulance_count = st.number_input("🚑 Ambulance Count", min_value=0, value=2, key="ft_count")
+                if ft_ambulance == "Yes":
+                    ft_ambulance_count = st.number_input("🚑 Ambulance Count", min_value=1, value=2, step=1, key="ft_count", help="Must be at least 1 if ambulance service is available")
+                else:
+                    ft_ambulance_count = 0
+                    st.info("🚑 Ambulance count set to 0 since service is not available.")
             if st.button("🔍 Classify Facility Type", key="classify_ft"):
+                if ft_ambulance == "Yes" and ft_ambulance_count < 1:
+                    st.error("❌ Ambulance count must be at least 1 when ambulance service is available")
+                    st.stop()
+                elif ft_ambulance == "No" and ft_ambulance_count != 0:
+                    st.error("❌ Ambulance count must be 0 when ambulance is not available")
+                    st.stop()
                 ft_pharmacy_encoded = 1 if ft_pharmacy == "Yes" else 0
                 ft_ambulance_encoded = 1 if ft_ambulance == "Yes" else 0
                 ft_features = np.array([[
@@ -589,14 +621,33 @@ elif page == "🏷️ Facility Classification":
                 if 'le_type' in models:
                     ft_type = models['le_type'].inverse_transform([ft_prediction])[0]
                 else:
-                    type_mapping = {0: 'Hospital', 1: 'NursingHome', 2: 'Lab'}
+                    type_mapping = {
+                        0: 'General Hospital',
+                        1: 'Nursing Home',
+                        2: 'Laboratory',
+                        3: 'Clinic / Dispensary',
+                        4: 'Hospital & Maternity',
+                        5: 'Specialty Clinic',
+                        6: 'Ayurvedic / Homeopathic',
+                        7: 'Surgical / Procedural Facility',
+                        8: 'Other'
+                    }
                     ft_type = type_mapping.get(ft_prediction, 'Unknown')
-                type_icons = {"Hospital": "🏥", "NursingHome": "🏠", "Lab": "🔬"}
+                type_icons = {
+                    "General Hospital": "🏥",
+                    "Nursing Home": "🏠",
+                    "Laboratory": "🔬",
+                    "Clinic / Dispensary": "🏥",
+                    "Hospital & Maternity": "🤱",
+                    "Specialty Clinic": "⭐",
+                    "Ayurvedic / Homeopathic": "🌿",
+                    "Surgical / Procedural Facility": "🔪",
+                    "Other": "🏢"
+                }
                 icon = type_icons.get(ft_type, "🏢")
                 st.success(f"{icon} **Predicted Facility Type: {ft_type}**")
         st.markdown('</div>', unsafe_allow_html=True)
 
-# Cluster Analysis page
 elif page == "🎯 Cluster Analysis":
     st.markdown("""
     <div class="main-header">
@@ -604,15 +655,14 @@ elif page == "🎯 Cluster Analysis":
         <p>Discover patterns and group similar facilities together</p>
     </div>
     """, unsafe_allow_html=True)
-    cluster_names = ['🏆 Resource-Rich Facilities', '🏗️ Basic Infrastructure', '⭐ Specialized Services', '📈 Development Needs']
-    cluster_colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4']
+    cluster_names = ['📈 Development Needs', '🏗️ Basic Infrastructure', '⭐ Specialized Services']
+    cluster_colors = ['#FF6B6B', '#4ECDC4', '#45B7D1']
     st.markdown('<div class="info-card">', unsafe_allow_html=True)
     st.markdown("""
     ### 🎯 Cluster Definitions:
-    - **🏆 Resource-Rich Facilities**: Well-equipped with high staff and resources
-    - **🏗️ Basic Infrastructure**: Standard facilities with moderate resources  
-    - **⭐ Specialized Services**: Focused services with specific strengths
     - **📈 Development Needs**: Facilities requiring infrastructure improvement
+    - **🏗️ Basic Infrastructure**: Standard facilities with moderate resources
+    - **⭐ Specialized Services**: Focused services with specific strengths
     """)
     st.markdown('</div>', unsafe_allow_html=True)
     if 'Cluster' in df.columns:
@@ -640,7 +690,6 @@ elif page == "🎯 Cluster Analysis":
         )
         st.plotly_chart(fig, use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
-        # Cluster characteristics heatmap
         st.markdown('<div class="info-card">', unsafe_allow_html=True)
         st.subheader("📊 Cluster Characteristics")
         features_clust = [
@@ -653,8 +702,11 @@ elif page == "🎯 Cluster Analysis":
         features_clust = [f for f in features_clust if f in df.columns]
         if features_clust:
             cluster_summary = df.groupby('Cluster')[features_clust].mean()
+            cluster_summary_formatted = cluster_summary.copy()
+            for col in cluster_summary_formatted.columns:
+                cluster_summary_formatted[col] = cluster_summary_formatted[col].round().astype(int)
             fig = px.imshow(
-                cluster_summary.T,
+                cluster_summary_formatted.T,
                 text_auto=True,
                 aspect="auto",
                 color_continuous_scale='Viridis'
@@ -665,17 +717,15 @@ elif page == "🎯 Cluster Analysis":
                 yaxis_title="Resource Type",
                 font=dict(color='black')
             )
-            # Update x-axis labels to cluster names
             fig.update_xaxes(
                 tickmode='array',
                 tickvals=list(range(len(cluster_names))),
                 ticktext=cluster_names
             )
             st.plotly_chart(fig, use_container_width=True)
-            # Display summary table
-            cluster_summary.index = [f"Cluster {i} ({cluster_names[i]})" for i in range(len(cluster_names))]
+            cluster_summary_formatted.index = [f"Cluster {i} ({cluster_names[i]})" for i in range(len(cluster_names))]
             st.dataframe(
-                cluster_summary.style.background_gradient(cmap='viridis').format("{:.1f}"),
+                cluster_summary_formatted.style.format("{:.0f}"),
                 use_container_width=True
             )
         else:
@@ -683,7 +733,6 @@ elif page == "🎯 Cluster Analysis":
         st.markdown('</div>', unsafe_allow_html=True)
     else:
         st.error("❌ Cluster information not available")
-    # Find cluster for user input
     st.markdown('<div class="info-card">', unsafe_allow_html=True)
     st.subheader("🔍 Find Cluster for Your Facility")
     st.markdown("*Enter your facility's characteristics to see which cluster it belongs to*")
@@ -694,22 +743,33 @@ elif page == "🎯 Cluster Analysis":
         cluster_nurses = st.number_input("👩‍⚕️ Number of Nurses", min_value=0, value=15, step=1, key="cluster_nurses")
     with col2:
         cluster_midwives = st.number_input("🤱 Number of Midwives", min_value=0, value=5, step=1, key="cluster_midwives")
-        cluster_ambulance = st.number_input("🚑 Number of Ambulances", min_value=0, value=2, step=1, key="cluster_amb")
-    col1, col2, col3 = st.columns([1, 2, 1])
-    with col2:
+        cluster_ambulance_service = st.selectbox("🚑 Ambulance Service Available", options=["Yes", "No"], key="cluster_amb_service")
+        if cluster_ambulance_service == "Yes":
+            cluster_ambulance = st.number_input("🚑 Number of Ambulances", min_value=1, value=2, step=1, key="cluster_amb", help="Must be at least 1 if ambulance service is available")
+        else:
+            cluster_ambulance = 0
+            st.info("🚑 Ambulance count set to 0 since service is not available.")
+    colA, colB, colC = st.columns([1, 2, 1])
+    with colB:
         if st.button("🎯 Find My Cluster", use_container_width=True):
-            if kmeans_model is not None and clust_scaler is not None:
+            if cluster_ambulance_service == "Yes" and cluster_ambulance < 1:
+                st.error("❌ Ambulance count must be at least 1 when ambulance service is available")
+                st.stop()
+            elif cluster_ambulance_service == "No" and cluster_ambulance != 0:
+                st.error("❌ Ambulance count must be 0 when ambulance is not available")
+                st.stop()
+            if clust_scaler is not None and kmeans_model is not None:
                 cluster_features = np.array([[
-                    cluster_beds,
-                    cluster_doctors,
-                    cluster_nurses,
-                    cluster_midwives,
-                    cluster_ambulance
+                    int(round(cluster_beds)),
+                    int(round(cluster_doctors)),
+                    int(round(cluster_nurses)),
+                    int(round(cluster_midwives)),
+                    int(round(cluster_ambulance))
                 ]])
-                scaled_cluster_features = clust_scaler.transform(cluster_features)
-                cluster_pred = kmeans_model.predict(scaled_cluster_features)[0]
-                cluster_name = cluster_names[cluster_pred]
-                cluster_color = cluster_colors[cluster_pred]
+                scaled_features = clust_scaler.transform(cluster_features)
+                pred = kmeans_model.predict(scaled_features)[0]
+                cluster_name = cluster_names[pred]
+                cluster_color = cluster_colors[pred]
                 st.markdown(f"""
                 <div style="
                     background: linear-gradient(135deg, {cluster_color}40, {cluster_color}20);
@@ -727,21 +787,18 @@ elif page == "🎯 Cluster Analysis":
                     </h1>
                 </div>
                 """, unsafe_allow_html=True)
-                # Recommendations
                 recommendations = {
-                    0: ["🎯 Maintain high standards", "📊 Share best practices", "🤝 Mentor other facilities"],
+                    0: ["🚀 Priority for resource allocation", "👥 Staff development programs", "🏗️ Infrastructure upgrades"],
                     1: ["📈 Focus on staff training", "🛏️ Consider expanding capacity", "💊 Enhance service offerings"],
-                    2: ["⭐ Leverage specialized strengths", "🔗 Build partnerships", "📋 Document expertise"],
-                    3: ["🚀 Priority for resource allocation", "👥 Staff development programs", "🏗️ Infrastructure upgrades"]
+                    2: ["⭐ Leverage specialized strengths", "🔗 Build partnerships", "📋 Document expertise"]
                 }
                 st.markdown("### 💡 Recommendations:")
-                for rec in recommendations.get(cluster_pred, []):
+                for rec in recommendations.get(pred, []):
                     st.markdown(f"• {rec}")
             else:
                 st.error("❌ Clustering model not available")
     st.markdown('</div>', unsafe_allow_html=True)
 
-# Anomaly Detection page
 elif page == "⚠️ Anomaly Detection":
     st.markdown("""
     <div class="main-header">
@@ -767,30 +824,26 @@ elif page == "⚠️ Anomaly Detection":
     if not features_anomaly:
         st.error("❌ No anomaly detection features available in the dataset")
     else:
-        # Scale features
+        from sklearn.ensemble import IsolationForest
         scaler_anomaly = StandardScaler()
         X_scaled_anomaly = scaler_anomaly.fit_transform(df[features_anomaly])
-        # Fit Isolation Forest
         iso_forest = IsolationForest(contamination=0.05, random_state=42)
         anomaly_scores = iso_forest.fit_predict(X_scaled_anomaly)
-        # Add to dataframe
         df_anomaly = df.copy()
         df_anomaly['AnomalyScore'] = anomaly_scores
-        # Generate reasons
         def generate_reason(row):
             reasons = []
             for feature in features_anomaly:
-                feature_value = row[feature]
-                lower_threshold = df[feature].quantile(0.05)
-                upper_threshold = df[feature].quantile(0.95)
-                if feature_value > upper_threshold:
-                    reasons.append(f'📈 High {feature.replace("Averagemonthly", "").replace("Numberof", "").replace("Countof", "")}')
-                elif feature_value < lower_threshold:
-                    reasons.append(f'📉 Low {feature.replace("Averagemonthly", "").replace("Numberof", "").replace("Countof", "")}')
+                val = row[feature]
+                lower = df[feature].quantile(0.05)
+                upper = df[feature].quantile(0.95)
+                if val > upper:
+                    reasons.append(f'📈 High {feature}')
+                elif val < lower:
+                    reasons.append(f'📉 Low {feature}')
             return '; '.join(reasons) if reasons else '🔍 Unusual pattern detected'
         anomalies = df_anomaly[df_anomaly['AnomalyScore'] == -1].copy()
         anomalies['AnomalyReason'] = anomalies.apply(generate_reason, axis=1)
-        # Metrics
         col1, col2, col3 = st.columns(3)
         create_metric_card(len(anomalies), "Anomalies Found", col1)
         create_metric_card(f"{len(anomalies)/len(df)*100:.1f}%", "Anomaly Rate", col2)
@@ -798,30 +851,16 @@ elif page == "⚠️ Anomaly Detection":
         st.markdown('<div class="info-card">', unsafe_allow_html=True)
         st.subheader(f"⚠️ Detected Anomalies")
         if len(anomalies) > 0:
-            display_columns = ['FacilityName', 'Type(Hospital/NursingHome/Lab)', 
-                              'Class:(Public/Private)', 'AnomalyReason'] + features_anomaly
-            display_columns = [col for col in display_columns if col in anomalies.columns]
-            # Identify numeric columns
-            numeric_cols = anomalies[display_columns].select_dtypes(include=[np.number]).columns.tolist()
-
-            # Apply background gradient, then format only numeric columns
-            styled_anomalies = anomalies[display_columns].style.background_gradient(cmap='Pastel1')
-            if numeric_cols:
-                styled_anomalies = styled_anomalies.format({col: "{:.1f}" for col in numeric_cols})
-                st.dataframe(styled_anomalies, use_container_width=True, height=400)
-            # Download button
+            display_cols = ['FacilityName', 'Type(Hospital/NursingHome/Lab)', 'Class:(Public/Private)', 'AnomalyReason']
+            for col in features_anomaly:
+                if col in anomalies.columns:
+                    display_cols.append(col)
+            st.dataframe(anomalies[display_cols].style.background_gradient(cmap='Pastel1'), use_container_width=True, height=400)
             csv = anomalies.to_csv(index=False)
-            st.download_button(
-                label="📥 Download Anomaly Report as CSV",
-                data=csv,
-                file_name="healthcare_anomalies.csv",
-                mime="text/csv",
-                use_container_width=True
-            )
+            st.download_button("📥 Download Anomaly Report as CSV", data=csv, file_name="healthcare_anomalies.csv", mime="text/csv")
         else:
             st.info("✅ No anomalies detected in the current dataset!")
         st.markdown('</div>', unsafe_allow_html=True)
-        # Visualization
         st.markdown('<div class="info-card">', unsafe_allow_html=True)
         st.subheader("📊 Anomaly Distribution Analysis")
         if len(features_anomaly) >= 2:
@@ -836,7 +875,6 @@ elif page == "⚠️ Anomaly Detection":
             )
             fig.update_layout(height=500)
             st.plotly_chart(fig, use_container_width=True)
-        # Distribution plots
         cols = st.columns(min(3, len(features_anomaly)))
         for i, feature in enumerate(features_anomaly[:3]):
             with cols[i]:
@@ -850,30 +888,12 @@ elif page == "⚠️ Anomaly Detection":
                 if feature in df.columns:
                     q95 = df[feature].quantile(0.95)
                     q05 = df[feature].quantile(0.05)
-                    fig.add_vline(
-                        x=q95,
-                        line_dash="dash",
-                        line_color="red",
-                        annotation_text="95th percentile",
-                        annotation_position="top right"
-                    )
-                    fig.add_vline(
-                        x=q05,
-                        line_dash="dash",
-                        line_color="red",
-                        annotation_text="5th percentile",
-                        annotation_position="bottom right"
-                    )
-                fig.update_layout(
-                    height=300,
-                    showlegend=False,
-                    font=dict(size=12, color='black'),
-                    margin=dict(l=10, r=10, t=40, b=40)
-                )
+                    fig.add_vline(x=q95, line_dash="dash", line_color="red", annotation_text="95th percentile", annotation_position="top right")
+                    fig.add_vline(x=q05, line_dash="dash", line_color="red", annotation_text="5th percentile", annotation_position="bottom right")
+                fig.update_layout(height=300, showlegend=False, font=dict(size=12, color='black'), margin=dict(l=10, r=10, t=40, b=40))
                 st.plotly_chart(fig, use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
-# Footer
 st.markdown("---")
 st.markdown("""
 <div style="
